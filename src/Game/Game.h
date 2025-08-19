@@ -1,4 +1,5 @@
 #pragma once
+#include "Player.h"
 
 class Game {
     public:
@@ -8,4 +9,5 @@ class Game {
    
     private:
     bool isRunning;
+    Player player;
 };
