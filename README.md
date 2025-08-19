@@ -26,16 +26,6 @@ This project demonstrates skills relevant for:
 - 🤖 **AI NPC**: autonomous movement using pathfinding / finite state machines
 - 🔐 **Security-Aware Code**: memory safety, input validation, secure networking
 
----
-
-## 🖼 Demo
-
-👉 _(Insert GIFs or screenshots here — can record with OBS or asciinema)_
-
-![Demo Screenshot](assets/demo-screenshot.png)
-
----
-
 ## 🚀 Getting Started
 
 ### Prerequisites
