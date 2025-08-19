@@ -1,8 +1,12 @@
 # Multiplayer-Game-Engine-Demo
 
-# 🎮 Mini Game Engine Demo
+# 🎮 Mini Game Engine Demo - Quantum Runner
 
-A lightweight **C++ game engine demo** showcasing **low-level systems programming**, **multiplayer networking**, and **basic AI agents**.
+Quantum Runner
+
+Quantum Runner is a fast-paced, top-down endless runner game where players navigate a constantly shifting world filled with obstacles and collectible quantum tokens. The player must dodge obstacles, collect tokens for points, and survive as long as possible while the game progressively speeds up and the environment “quantum jumps” every few seconds, keeping the challenge dynamic and unpredictable.
+
+Built in C++ using a custom game engine, Quantum Runner demonstrates modular engine design, a real-time game loop, player input handling, and procedural world generation.
 
 This project demonstrates skills relevant for:
 
