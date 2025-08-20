@@ -11,5 +11,7 @@ void Game::update() {
 }
 
 void Game::render(sf::RenderWindow& window) {
+    // draw avatar
+    window.draw(avatar);
     std::cout << "Game rendered" << std::endl;
 }
