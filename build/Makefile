@@ -177,6 +177,30 @@ src/Game/Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Multiplayer-Game-Engine-Demo.dir/build.make CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Game.cpp.s
 .PHONY : src/Game/Game.cpp.s
 
+src/Game/Player.o: src/Game/Player.cpp.o
+.PHONY : src/Game/Player.o
+
+# target to build an object file
+src/Game/Player.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Multiplayer-Game-Engine-Demo.dir/build.make CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Player.cpp.o
+.PHONY : src/Game/Player.cpp.o
+
+src/Game/Player.i: src/Game/Player.cpp.i
+.PHONY : src/Game/Player.i
+
+# target to preprocess a source file
+src/Game/Player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Multiplayer-Game-Engine-Demo.dir/build.make CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Player.cpp.i
+.PHONY : src/Game/Player.cpp.i
+
+src/Game/Player.s: src/Game/Player.cpp.s
+.PHONY : src/Game/Player.s
+
+# target to generate assembly for a file
+src/Game/Player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Multiplayer-Game-Engine-Demo.dir/build.make CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Player.cpp.s
+.PHONY : src/Game/Player.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -216,6 +240,9 @@ help:
 	@echo "... src/Game/Game.o"
 	@echo "... src/Game/Game.i"
 	@echo "... src/Game/Game.s"
+	@echo "... src/Game/Player.o"
+	@echo "... src/Game/Player.i"
+	@echo "... src/Game/Player.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

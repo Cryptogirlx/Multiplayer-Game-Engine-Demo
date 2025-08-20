@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Engine/Engine.cpp.o.d"
   "CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Game.cpp.o"
   "CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Game.cpp.o.d"
+  "CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Player.cpp.o"
+  "CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Player.cpp.o.d"
   "CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/main.cpp.o"
   "CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/main.cpp.o.d"
   "Multiplayer-Game-Engine-Demo"
