@@ -11,6 +11,6 @@ void Game::update() {
     std::cout << "Game updated" << std::endl;
 }
 
-void Game::render() {
+void Game::render(RenderWindow& window;) {
     std::cout << "Game rendered" << std::endl;
 }

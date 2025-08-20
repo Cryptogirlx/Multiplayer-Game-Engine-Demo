@@ -1,10 +1,14 @@
 #pragma once
 class Game;
+#include <SFML/Graphics.hpp>
 
 class Engine {
 public:
-    void init();            // Initialize engine systems
-    void run(Game& game);   // Run the engine with a game
+    void init();            
+    void run(Game& game);   
+    void stop();           
+        
 private:
     bool isRunning;
+    sf::RenderWindow window;
 };

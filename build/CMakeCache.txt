@@ -240,6 +240,12 @@ Multiplayer-Game-Engine-Demo_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 Multiplayer-Game-Engine-Demo_SOURCE_DIR:STATIC=/Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo
 
+//The directory containing a CMake configuration file for SFML.
+SFML_DIR:PATH=/usr/local/lib/cmake/SFML
+
+//Path to a file.
+SFML_DOC_DIR:PATH=/usr/local/share/doc/SFML
+
 
 ########################
 # INTERNAL cache entries

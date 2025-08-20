@@ -1,13 +1,14 @@
 #pragma once
 #include "Player.h"
+#include <SFML/Graphics.hpp>
 
 class Game {
     public:
-    void start(); // Start the game
-    void update(); // Update the game
-    void render(); // Render the game
+    void start();
+    void update();
+    void render(sf::RenderWindow& window);
    
     private:
-    bool isRunning;
     Player player;
+
 };

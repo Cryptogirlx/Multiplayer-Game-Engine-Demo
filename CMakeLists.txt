@@ -12,3 +12,7 @@ set(SOURCES
 include_directories(src)
 
 add_executable(Multiplayer-Game-Engine-Demo ${SOURCES})
+
+find_package(SFML REQUIRED COMPONENTS System Window Graphics)
+
+target_link_libraries(Multiplayer-Game-Engine-Demo sfml-system sfml-window sfml-graphics)
