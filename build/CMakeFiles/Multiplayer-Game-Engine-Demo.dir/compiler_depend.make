@@ -997,6 +997,7 @@ CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Engine/Engine.cpp.o: /Users/cryp
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdint.h \
+  /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/Engine/Engine.h \
   /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Game.h \
   /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Player.h \
   /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/Engine/Engine.h \
@@ -1084,15 +1085,18 @@ CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Game.cpp.o: /Users/cryptogi
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/TargetConditionals.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/___wctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/__wctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/__xlocale.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_abort.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_assert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctermid.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_locale.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_mb_cur_max.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_printf.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_static_assert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdlib.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_string.h \
@@ -1112,6 +1116,7 @@ CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Game.cpp.o: /Users/cryptogi
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_wctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_xlocale.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/alloca.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/assert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/all_of.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/any_of.h \
@@ -1379,13 +1384,28 @@ CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Game.cpp.o: /Users/cryptogi
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/to_chars_integral.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/to_chars_result.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/traits.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/calendar.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/concepts.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/convert_to_timespec.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/convert_to_tm.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/day.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/duration.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/file_clock.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/hh_mm_ss.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/high_resolution_clock.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/literals.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/month.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/month_weekday.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/monthday.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/statically_widen.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/steady_clock.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/system_clock.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/time_point.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/weekday.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/year.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/year_month.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/year_month_day.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/year_month_weekday.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__compare/common_comparison_category.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__compare/compare_partial_order_fallback.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__compare/compare_strong_order_fallback.h \
@@ -1431,6 +1451,22 @@ CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Game.cpp.o: /Users/cryptogi
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/nested_exception.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/operations.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/terminate.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/copy_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_entry.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_status.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_time_type.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_type.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/filesystem_error.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/operations.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/path.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/perm_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/perms.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/space_info.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/u8path.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/buffer.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/concepts.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/container_adaptor.h \
@@ -1818,8 +1854,10 @@ CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Game.cpp.o: /Users/cryptogi
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/atomic \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bit \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bitset \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cassert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cctype \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cerrno \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/chrono \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/climits \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/clocale \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cmath \
@@ -1839,9 +1877,12 @@ CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Game.cpp.o: /Users/cryptogi
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/errno.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/exception \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/execution \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/filesystem \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/format \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/forward_list \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/functional \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/initializer_list \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iosfwd \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream \
@@ -2037,7 +2078,87 @@ CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Game.cpp.o: /Users/cryptogi
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdint.h \
   /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/Engine/Engine.h \
-  /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Game.h
+  /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/Engine/Engine.h \
+  /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Game.h \
+  /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Player.h \
+  /usr/local/include/SFML/Config.hpp \
+  /usr/local/include/SFML/Graphics.hpp \
+  /usr/local/include/SFML/Graphics/BlendMode.hpp \
+  /usr/local/include/SFML/Graphics/CircleShape.hpp \
+  /usr/local/include/SFML/Graphics/Color.hpp \
+  /usr/local/include/SFML/Graphics/Color.inl \
+  /usr/local/include/SFML/Graphics/ConvexShape.hpp \
+  /usr/local/include/SFML/Graphics/CoordinateType.hpp \
+  /usr/local/include/SFML/Graphics/Drawable.hpp \
+  /usr/local/include/SFML/Graphics/Export.hpp \
+  /usr/local/include/SFML/Graphics/Font.hpp \
+  /usr/local/include/SFML/Graphics/Glsl.hpp \
+  /usr/local/include/SFML/Graphics/Glsl.inl \
+  /usr/local/include/SFML/Graphics/Glyph.hpp \
+  /usr/local/include/SFML/Graphics/Image.hpp \
+  /usr/local/include/SFML/Graphics/PrimitiveType.hpp \
+  /usr/local/include/SFML/Graphics/Rect.hpp \
+  /usr/local/include/SFML/Graphics/Rect.inl \
+  /usr/local/include/SFML/Graphics/RectangleShape.hpp \
+  /usr/local/include/SFML/Graphics/RenderStates.hpp \
+  /usr/local/include/SFML/Graphics/RenderTarget.hpp \
+  /usr/local/include/SFML/Graphics/RenderTexture.hpp \
+  /usr/local/include/SFML/Graphics/RenderWindow.hpp \
+  /usr/local/include/SFML/Graphics/Shader.hpp \
+  /usr/local/include/SFML/Graphics/Shape.hpp \
+  /usr/local/include/SFML/Graphics/Sprite.hpp \
+  /usr/local/include/SFML/Graphics/StencilMode.hpp \
+  /usr/local/include/SFML/Graphics/Text.hpp \
+  /usr/local/include/SFML/Graphics/Texture.hpp \
+  /usr/local/include/SFML/Graphics/Transform.hpp \
+  /usr/local/include/SFML/Graphics/Transform.inl \
+  /usr/local/include/SFML/Graphics/Transformable.hpp \
+  /usr/local/include/SFML/Graphics/Vertex.hpp \
+  /usr/local/include/SFML/Graphics/VertexArray.hpp \
+  /usr/local/include/SFML/Graphics/VertexBuffer.hpp \
+  /usr/local/include/SFML/Graphics/View.hpp \
+  /usr/local/include/SFML/System.hpp \
+  /usr/local/include/SFML/System/Angle.hpp \
+  /usr/local/include/SFML/System/Angle.inl \
+  /usr/local/include/SFML/System/Clock.hpp \
+  /usr/local/include/SFML/System/Err.hpp \
+  /usr/local/include/SFML/System/Exception.hpp \
+  /usr/local/include/SFML/System/Export.hpp \
+  /usr/local/include/SFML/System/FileInputStream.hpp \
+  /usr/local/include/SFML/System/InputStream.hpp \
+  /usr/local/include/SFML/System/MemoryInputStream.hpp \
+  /usr/local/include/SFML/System/Sleep.hpp \
+  /usr/local/include/SFML/System/String.hpp \
+  /usr/local/include/SFML/System/String.inl \
+  /usr/local/include/SFML/System/Time.hpp \
+  /usr/local/include/SFML/System/Time.inl \
+  /usr/local/include/SFML/System/Utf.hpp \
+  /usr/local/include/SFML/System/Utf.inl \
+  /usr/local/include/SFML/System/Vector2.hpp \
+  /usr/local/include/SFML/System/Vector2.inl \
+  /usr/local/include/SFML/System/Vector3.hpp \
+  /usr/local/include/SFML/System/Vector3.inl \
+  /usr/local/include/SFML/Window.hpp \
+  /usr/local/include/SFML/Window/Clipboard.hpp \
+  /usr/local/include/SFML/Window/Context.hpp \
+  /usr/local/include/SFML/Window/ContextSettings.hpp \
+  /usr/local/include/SFML/Window/Cursor.hpp \
+  /usr/local/include/SFML/Window/Event.hpp \
+  /usr/local/include/SFML/Window/Event.inl \
+  /usr/local/include/SFML/Window/Export.hpp \
+  /usr/local/include/SFML/Window/GlResource.hpp \
+  /usr/local/include/SFML/Window/Joystick.hpp \
+  /usr/local/include/SFML/Window/Keyboard.hpp \
+  /usr/local/include/SFML/Window/Mouse.hpp \
+  /usr/local/include/SFML/Window/Sensor.hpp \
+  /usr/local/include/SFML/Window/Touch.hpp \
+  /usr/local/include/SFML/Window/VideoMode.hpp \
+  /usr/local/include/SFML/Window/Vulkan.hpp \
+  /usr/local/include/SFML/Window/Window.hpp \
+  /usr/local/include/SFML/Window/WindowBase.hpp \
+  /usr/local/include/SFML/Window/WindowBase.inl \
+  /usr/local/include/SFML/Window/WindowEnums.hpp \
+  /usr/local/include/SFML/Window/WindowHandle.hpp
 
 CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/main.cpp.o: /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/main.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h \

@@ -1,34 +1,41 @@
 #include "Engine.h"
 #include "../Game/Game.h"
+#include <SFML/Graphics.hpp>
+#include <SFML/Window/Window.hpp> // For sf::Event
 
+// Initialize engine and window
 void Engine::init() {
     isRunning = true;
-    window.create(sf::VideoMode(sf::Vector2u(800, 600)), "Quantum Runner", sf::Style::Default);
+    // SFML 3.x VideoMode takes a Vector2u
+    window.create(sf::VideoMode(sf::Vector2u(800, 600)), "Quantum Runner");
+    window.setFramerateLimit(60); // optional
 }
 
-void Engine::run(Game& game){
+// Run the main game loop
+void Engine::run(Game& game) {
     game.start();
-    while (isRunning && window.isOpen()) {
 
-         // --- Event handling ---
-        while (auto event = window.pollEvent()) {   
-            if (event->type == sf::Sensor::Type::Closed) { 
-                window.close();     
-                stop();   
+    while (isRunning && window.isOpen()) {
+        // --- Event Handling ---
+        while (auto maybeEvent = window.pollEvent()) {
+            // SFML 3.x: events are std::optional<sf::Event>
+            if (maybeEvent->is<sf::Event::Closed>()) { // check if it's a Close event
+                window.close();
+                stop();
             }
         }
 
-        // --- Update the game state ---
+        // --- Update Game Logic ---
         game.update();
 
-        // --- Render the frame ---
-        window.clear(sf::Color::Black); // Clear screen to black
-        game.render();  // Render game objects
-        window.display();     // Show the drawn frame
+        // --- Render ---
+        window.clear(sf::Color::Black);   // clear previous frame
+        game.render(window);              // render game objects
+        window.display();                 // show the frame
     }
 }
 
+// Stop the engine/game loop
 void Engine::stop() {
     isRunning = false;
 }
-

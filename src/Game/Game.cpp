@@ -3,7 +3,6 @@
 #include <iostream>
 
 void Game::start() {
-    isRunning = true;
     std::cout << "Game started" << std::endl;
 }
 
@@ -11,6 +10,6 @@ void Game::update() {
     std::cout << "Game updated" << std::endl;
 }
 
-void Game::render(RenderWindow& window;) {
+void Game::render(sf::RenderWindow& window) {
     std::cout << "Game rendered" << std::endl;
 }
