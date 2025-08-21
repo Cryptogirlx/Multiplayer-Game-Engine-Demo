@@ -7,6 +7,7 @@ set(SOURCES
     src/main.cpp
     src/Engine/Engine.cpp
     src/Game/Game.cpp
+    src/Game/Player.cpp
 )
 
 include_directories(src)

@@ -5,6 +5,7 @@
 
 class Game {
     public:
+    Game();
     void start();
     void update();
     void render(sf::RenderWindow& window);
