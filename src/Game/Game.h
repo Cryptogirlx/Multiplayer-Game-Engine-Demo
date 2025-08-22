@@ -1,16 +1,21 @@
 #pragma once
+#include "../Engine/Engine.h"
 #include "Player.h"
 #include <SFML/Graphics.hpp>
-#include "./Engine/Engine.h"
 
 class Game {
-    public:
-    Game();
-    void start();
-    void update();
-    void render(sf::RenderWindow& window);
-   
-    private:
-    Player player;
+public:
+  Game();
+  void start();
+  void update();
+  void render(sf::RenderWindow &window);
 
+  sf::Font font;
+
+  std::unique_ptr<sf::Text> nameText;
+  std::unique_ptr<sf::Text> healthText;
+  std::unique_ptr<sf::Text> scoreText;
+
+private:
+  Player player;
 };
