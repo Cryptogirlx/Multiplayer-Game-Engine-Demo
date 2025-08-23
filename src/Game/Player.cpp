@@ -8,6 +8,7 @@ Player::Player() : avatar() {
   health = 100;
   score = 0;
   speed = 4;
+  name = "Player"; // Add this line to initialize the name
 
   boundWidth = 800;
   boundHeight = 600;
