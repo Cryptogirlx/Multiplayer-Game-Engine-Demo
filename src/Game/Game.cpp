@@ -9,8 +9,7 @@ void Game::start() {
 
   // Import font - ADD DEBUGGING
   std::cout << "Attempting to load font..." << std::endl;
-  if (!font.openFromFile(
-          "../assets/fonts/Roboto/Roboto-VariableFont_wdth,wght.ttf")) {
+  if (!font.openFromFile("../assets/fonts/Conthrax-SemiBold.otf")) {
     std::cerr << "Failed to load font!" << std::endl;
     std::cerr << "Current working directory might be wrong" << std::endl;
     // Don't continue if font fails to load
@@ -27,7 +26,7 @@ void Game::start() {
   healthText->setFillColor(sf::Color::White);
   healthText->setPosition(sf::Vector2f(10.f, 40.f));
 
-  scoreText = std::make_unique<sf::Text>(font, sf::String("ScoreText"), 100);
+  scoreText = std::make_unique<sf::Text>(font, sf::String("ScoreText"), 20);
   scoreText->setFillColor(sf::Color::White);
   scoreText->setPosition(sf::Vector2f(10.f, 80.f));
 

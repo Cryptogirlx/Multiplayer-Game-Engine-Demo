@@ -3,7 +3,7 @@
 
 Player::Player() : avatar() {
 
-  x = 100;
+  x = 250; // Start in playable area (right of text area)
   y = 100;
   health = 100;
   score = 0;
@@ -43,9 +43,10 @@ void Player::move(Direction direction) {
     break;
   }
 
-  // clamp: keep inside [0, boundSize - playerSize]
-  if (x < 0)
-    x = 0;
+  // clamp: keep inside bounds and avoid text area
+  // Text area is roughly from x=0 to x=200, y=0 to y=120
+  if (x < 200) // Don't go into text area on left
+    x = 200;
   if (y < 0)
     y = 0;
   if (x > boundWidth - avatar.getSize().x)
