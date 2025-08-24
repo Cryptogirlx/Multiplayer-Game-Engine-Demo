@@ -37,7 +37,6 @@ void Game::start(sf::RenderWindow &window) {
   scoreText->setString("Score: " + std::to_string(player.score));
 
   // set game background
-  std::cout << "Attempting to load background..." << std::endl;
   if (!backgroundTexture.loadFromFile("../assets/landing.png")) {
     std::cerr << "Failed to load background!" << std::endl;
     std::cerr << "Current working directory might be wrong" << std::endl;

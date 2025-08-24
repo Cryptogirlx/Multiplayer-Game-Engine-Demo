@@ -22,7 +22,8 @@ public:
   void updatePlayerHeath();
   void updatePlayerScore();
 
-  sf::RectangleShape avatar;
+  sf::Texture avatarTexture;
+  std::unique_ptr<sf::Sprite> avatarSprite;
 
 private:
   int x, y;

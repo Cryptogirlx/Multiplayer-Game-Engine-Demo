@@ -1,8 +1,8 @@
 #include "Player.h"
 #include <iostream>
+#include <memory>
 
-Player::Player() : avatar() {
-
+Player::Player() {
   x = 250; // Start in playable area (right of text area)
   y = 100;
   health = 100;
@@ -13,10 +13,19 @@ Player::Player() : avatar() {
   boundWidth = 800;
   boundHeight = 600;
 
-  avatar.setSize(sf::Vector2f(50.f, 50.f));
-  avatar.setFillColor(sf::Color::Red);
+  // Load avatar texture
+  if (!avatarTexture.loadFromFile("../assets/avatar.png")) {
+    std::cerr << "Failed to load avatar!" << std::endl;
+    std::cerr << "Current working directory might be wrong" << std::endl;
+    // Don't continue if avatar fails to load
+    return;
+  }
+  std::cout << "Avatar loaded successfully!" << std::endl;
 
-  avatar.setPosition(
+  // Create sprite and set texture
+  avatarSprite = std::make_unique<sf::Sprite>(avatarTexture);
+  avatarSprite->setTexture(avatarTexture);
+  avatarSprite->setPosition(
       sf::Vector2f(static_cast<float>(x), static_cast<float>(y)));
 }
 
@@ -25,7 +34,11 @@ void Player::setBounds(float width, float height) {
   boundHeight = height;
 }
 
-void Player::draw(sf::RenderWindow &window) { window.draw(avatar); }
+void Player::draw(sf::RenderWindow &window) {
+  if (avatarSprite) {
+    window.draw(*avatarSprite);
+  }
+}
 
 void Player::move(Direction direction) {
   switch (direction) {
@@ -49,14 +62,16 @@ void Player::move(Direction direction) {
     x = 200;
   if (y < 0)
     y = 0;
-  if (x > boundWidth - avatar.getSize().x)
-    x = boundWidth - avatar.getSize().x;
-  if (y > boundHeight - avatar.getSize().y)
-    y = boundHeight - avatar.getSize().y;
+  if (x > boundWidth - 50) // Assuming sprite width is 50
+    x = boundWidth - 50;
+  if (y > boundHeight - 50) // Assuming sprite height is 50
+    y = boundHeight - 50;
 
   // Update avatar position
-  avatar.setPosition(
-      sf::Vector2f(static_cast<float>(x), static_cast<float>(y)));
+  if (avatarSprite) {
+    avatarSprite->setPosition(
+        sf::Vector2f(static_cast<float>(x), static_cast<float>(y)));
+  }
 }
 
 sf::String Player::getPlayerName() { return name; }
