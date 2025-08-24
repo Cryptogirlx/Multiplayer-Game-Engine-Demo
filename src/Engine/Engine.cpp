@@ -13,7 +13,7 @@ void Engine::init() {
 
 // Run the main game loop
 void Engine::run(Game &game) {
-  game.start();
+  game.start(window);
 
   while (isRunning && window.isOpen()) {
     // --- Event Handling ---

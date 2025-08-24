@@ -6,7 +6,7 @@
 // Constructor with member initializer list
 Game::Game() { std::cout << "Game constructor called!" << std::endl; }
 
-void Game::start() {
+void Game::start(sf::RenderWindow &window) {
 
   // Import font - ADD DEBUGGING
   std::cout << "Attempting to load font..." << std::endl;
@@ -38,8 +38,7 @@ void Game::start() {
 
   // set game background
   std::cout << "Attempting to load background..." << std::endl;
-  if (!backgroundTexture.loadFromFile(
-          "../assets/pixel-art-mystical-background/7481714.jpg")) {
+  if (!backgroundTexture.loadFromFile("../assets/landing.png")) {
     std::cerr << "Failed to load background!" << std::endl;
     std::cerr << "Current working directory might be wrong" << std::endl;
     // Don't continue if font fails to load
@@ -51,6 +50,19 @@ void Game::start() {
   backgroundSprite = std::make_unique<sf::Sprite>(backgroundTexture);
   backgroundSprite->setTexture(backgroundTexture);
   backgroundSprite->setPosition(sf::Vector2f(0.f, 0.f));
+
+  // compute background scale
+
+  // Get the window size
+  sf::Vector2u windowSize = window.getSize();
+  // Get the texture size
+  sf::Vector2u textureSize = backgroundTexture.getSize();
+  // Compute scale factors
+  float scaleX = static_cast<float>(windowSize.x) / textureSize.x;
+  float scaleY = static_cast<float>(windowSize.y) / textureSize.y;
+
+  // Apply scaling to the sprite
+  backgroundSprite->setScale(sf::Vector2f(scaleX, scaleY));
 
   std::cout << "Game started" << std::endl;
 }
@@ -83,10 +95,10 @@ void Game::render(sf::RenderWindow &window) {
   }
 
   // Temporarily comment out other elements to test background visibility
-  // player.draw(window); // draw avatar
-  // window.draw(*nameText);
-  // window.draw(*healthText);
-  // window.draw(*scoreText);
+  player.draw(window); // draw avatar
+  window.draw(*nameText);
+  window.draw(*healthText);
+  window.draw(*scoreText);
 
   std::cout << "Game rendered" << std::endl;
 }

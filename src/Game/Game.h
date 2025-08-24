@@ -6,7 +6,7 @@
 class Game {
 public:
   Game();
-  void start();
+  void start(sf::RenderWindow &window);
   void update();
   void render(sf::RenderWindow &window);
 
