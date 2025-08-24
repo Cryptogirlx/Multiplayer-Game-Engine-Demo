@@ -16,6 +16,9 @@ public:
   std::unique_ptr<sf::Text> healthText;
   std::unique_ptr<sf::Text> scoreText;
 
+  sf::Texture backgroundTexture;
+  std::unique_ptr<sf::Sprite> backgroundSprite;
+
 private:
   Player player;
 };

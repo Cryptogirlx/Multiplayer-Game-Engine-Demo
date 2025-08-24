@@ -1,4 +1,5 @@
 #include "Game.h"
+#include <SFML/Graphics.hpp>
 #include <iostream>
 #include <memory>
 
@@ -35,6 +36,22 @@ void Game::start() {
   healthText->setString(" Health: " + std::to_string(player.health));
   scoreText->setString("Score: " + std::to_string(player.score));
 
+  // set game background
+  std::cout << "Attempting to load background..." << std::endl;
+  if (!backgroundTexture.loadFromFile(
+          "../assets/pixel-art-mystical-background/7481714.jpg")) {
+    std::cerr << "Failed to load background!" << std::endl;
+    std::cerr << "Current working directory might be wrong" << std::endl;
+    // Don't continue if font fails to load
+    return;
+  }
+  std::cout << "Background loaded successfully!" << std::endl;
+
+  // Set the texture on the sprite AFTER loading
+  backgroundSprite = std::make_unique<sf::Sprite>(backgroundTexture);
+  backgroundSprite->setTexture(backgroundTexture);
+  backgroundSprite->setPosition(sf::Vector2f(0.f, 0.f));
+
   std::cout << "Game started" << std::endl;
 }
 
@@ -57,12 +74,19 @@ void Game::update() {
 }
 
 void Game::render(sf::RenderWindow &window) {
-  player.draw(window); // draw avatar
+  // Check if texture is loaded before drawing
+  if (backgroundTexture.getSize().x > 0 && backgroundTexture.getSize().y > 0) {
+    window.draw(*backgroundSprite);
+    std::cout << "Drawing background sprite" << std::endl;
+  } else {
+    std::cout << "Background texture not loaded, skipping draw" << std::endl;
+  }
 
-  // draw UI
-  window.draw(*nameText);
-  window.draw(*healthText);
-  window.draw(*scoreText);
+  // Temporarily comment out other elements to test background visibility
+  // player.draw(window); // draw avatar
+  // window.draw(*nameText);
+  // window.draw(*healthText);
+  // window.draw(*scoreText);
 
   std::cout << "Game rendered" << std::endl;
 }
