@@ -8,7 +8,7 @@ Player::Player() {
   health = 100;
   score = 0;
   speed = 4;
-  name = "Player"; // Add this line to initialize the name
+  name = "Zsofie"; // Add this line to initialize the name
 
   boundWidth = 800;
   boundHeight = 600;
@@ -24,7 +24,6 @@ Player::Player() {
 
   // Create sprite and set texture
   avatarSprite = std::make_unique<sf::Sprite>(avatarTexture);
-  avatarSprite->setTexture(avatarTexture);
   avatarSprite->setPosition(
       sf::Vector2f(static_cast<float>(x), static_cast<float>(y)));
 }

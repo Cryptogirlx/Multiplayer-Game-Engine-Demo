@@ -1076,4 +1076,5 @@ CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Engine/Engine.cpp.o: \
   /usr/local/include/SFML/System/Sleep.hpp \
   /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/Engine/../Game/Game.h \
   /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/Engine/../Game/../Engine/Engine.h \
+  /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/Engine/../Game/Obstacle.h \
   /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/Engine/../Game/Player.h

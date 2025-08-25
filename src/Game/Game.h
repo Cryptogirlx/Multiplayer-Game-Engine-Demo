@@ -1,5 +1,6 @@
 #pragma once
 #include "../Engine/Engine.h"
+#include "Obstacle.h"
 #include "Player.h"
 #include <SFML/Graphics.hpp>
 
@@ -21,4 +22,6 @@ public:
 
 private:
   Player player;
+  Obstacle obstacle;
+  std::vector<Obstacle> obstacles;
 };

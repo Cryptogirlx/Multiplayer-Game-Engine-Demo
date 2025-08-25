@@ -85,12 +85,12 @@ clean: CMakeFiles/Multiplayer-Game-Engine-Demo.dir/clean
 CMakeFiles/Multiplayer-Game-Engine-Demo.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Multiplayer-Game-Engine-Demo.dir/build.make CMakeFiles/Multiplayer-Game-Engine-Demo.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Multiplayer-Game-Engine-Demo.dir/build.make CMakeFiles/Multiplayer-Game-Engine-Demo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target Multiplayer-Game-Engine-Demo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target Multiplayer-Game-Engine-Demo"
 .PHONY : CMakeFiles/Multiplayer-Game-Engine-Demo.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Multiplayer-Game-Engine-Demo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Multiplayer-Game-Engine-Demo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles 0
 .PHONY : CMakeFiles/Multiplayer-Game-Engine-Demo.dir/rule
@@ -102,7 +102,7 @@ Multiplayer-Game-Engine-Demo: CMakeFiles/Multiplayer-Game-Engine-Demo.dir/rule
 # codegen rule for target.
 CMakeFiles/Multiplayer-Game-Engine-Demo.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Multiplayer-Game-Engine-Demo.dir/build.make CMakeFiles/Multiplayer-Game-Engine-Demo.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles --progress-num=1,2,3,4,5 "Finished codegen for target Multiplayer-Game-Engine-Demo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Finished codegen for target Multiplayer-Game-Engine-Demo"
 .PHONY : CMakeFiles/Multiplayer-Game-Engine-Demo.dir/codegen
 
 # clean rule for target.

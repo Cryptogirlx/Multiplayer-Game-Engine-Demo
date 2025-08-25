@@ -7,7 +7,7 @@
 void Engine::init() {
   isRunning = true;
   // SFML 3.x VideoMode takes a Vector2u
-  window.create(sf::VideoMode(sf::Vector2u(800, 600)), "Quantum Runner");
+  window.create(sf::VideoMode(sf::Vector2u(1000, 800)), "Quantum Runner");
   window.setFramerateLimit(60); // optional
 }
 

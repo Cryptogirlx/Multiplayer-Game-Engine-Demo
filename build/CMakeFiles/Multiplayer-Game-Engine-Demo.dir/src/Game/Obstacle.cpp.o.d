@@ -1,7 +1,6 @@
-CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Game.cpp.o: \
-  /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Game.cpp \
-  /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Game.h \
-  /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/Game/../Engine/Engine.h \
+CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Obstacle.cpp.o: \
+  /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Obstacle.cpp \
+  /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Obstacle.h \
   /usr/local/include/SFML/Graphics.hpp \
   /usr/local/include/SFML/Graphics/BlendMode.hpp \
   /usr/local/include/SFML/Graphics/Export.hpp \
@@ -1075,6 +1074,4 @@ CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Game.cpp.o: \
   /usr/local/include/SFML/System/InputStream.hpp \
   /usr/local/include/SFML/System/MemoryInputStream.hpp \
   /usr/local/include/SFML/System/Sleep.hpp \
-  /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Obstacle.h \
-  /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Player.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream

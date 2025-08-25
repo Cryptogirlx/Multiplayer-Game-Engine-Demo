@@ -177,6 +177,30 @@ src/Game/Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Multiplayer-Game-Engine-Demo.dir/build.make CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Game.cpp.s
 .PHONY : src/Game/Game.cpp.s
 
+src/Game/Obstacle.o: src/Game/Obstacle.cpp.o
+.PHONY : src/Game/Obstacle.o
+
+# target to build an object file
+src/Game/Obstacle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Multiplayer-Game-Engine-Demo.dir/build.make CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Obstacle.cpp.o
+.PHONY : src/Game/Obstacle.cpp.o
+
+src/Game/Obstacle.i: src/Game/Obstacle.cpp.i
+.PHONY : src/Game/Obstacle.i
+
+# target to preprocess a source file
+src/Game/Obstacle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Multiplayer-Game-Engine-Demo.dir/build.make CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Obstacle.cpp.i
+.PHONY : src/Game/Obstacle.cpp.i
+
+src/Game/Obstacle.s: src/Game/Obstacle.cpp.s
+.PHONY : src/Game/Obstacle.s
+
+# target to generate assembly for a file
+src/Game/Obstacle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Multiplayer-Game-Engine-Demo.dir/build.make CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Obstacle.cpp.s
+.PHONY : src/Game/Obstacle.cpp.s
+
 src/Game/Player.o: src/Game/Player.cpp.o
 .PHONY : src/Game/Player.o
 
@@ -240,6 +264,9 @@ help:
 	@echo "... src/Game/Game.o"
 	@echo "... src/Game/Game.i"
 	@echo "... src/Game/Game.s"
+	@echo "... src/Game/Obstacle.o"
+	@echo "... src/Game/Obstacle.i"
+	@echo "... src/Game/Obstacle.s"
 	@echo "... src/Game/Player.o"
 	@echo "... src/Game/Player.i"
 	@echo "... src/Game/Player.s"

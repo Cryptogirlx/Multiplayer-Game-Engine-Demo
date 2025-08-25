@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/Engine/Engine.cpp" "CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Engine/Engine.cpp.o" "gcc" "CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Engine/Engine.cpp.o.d"
   "/Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Game.cpp" "CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Game.cpp.o" "gcc" "CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Game.cpp.o.d"
+  "/Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Obstacle.cpp" "CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Obstacle.cpp.o" "gcc" "CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Obstacle.cpp.o.d"
   "/Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Player.cpp" "CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Player.cpp.o" "gcc" "CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Player.cpp.o.d"
   "/Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/main.cpp" "CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/main.cpp.o" "gcc" "CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/main.cpp.o.d"
   )

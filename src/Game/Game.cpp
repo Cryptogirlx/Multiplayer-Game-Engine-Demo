@@ -1,5 +1,6 @@
 #include "Game.h"
 #include <SFML/Graphics.hpp>
+#include <filesystem>
 #include <iostream>
 #include <memory>
 
@@ -52,11 +53,9 @@ void Game::start(sf::RenderWindow &window) {
 
   // compute background scale
 
-  // Get the window size
   sf::Vector2u windowSize = window.getSize();
-  // Get the texture size
   sf::Vector2u textureSize = backgroundTexture.getSize();
-  // Compute scale factors
+
   float scaleX = static_cast<float>(windowSize.x) / textureSize.x;
   float scaleY = static_cast<float>(windowSize.y) / textureSize.y;
 
@@ -64,6 +63,9 @@ void Game::start(sf::RenderWindow &window) {
   backgroundSprite->setScale(sf::Vector2f(scaleX, scaleY));
 
   std::cout << "Game started" << std::endl;
+
+  // Create obstacles
+  obstacles.emplace_back("../assets/Alien1.png", 650, 600);
 }
 
 void Game::update() {
@@ -85,6 +87,7 @@ void Game::update() {
 }
 
 void Game::render(sf::RenderWindow &window) {
+
   // Check if texture is loaded before drawing
   if (backgroundTexture.getSize().x > 0 && backgroundTexture.getSize().y > 0) {
     window.draw(*backgroundSprite);
@@ -93,8 +96,11 @@ void Game::render(sf::RenderWindow &window) {
     std::cout << "Background texture not loaded, skipping draw" << std::endl;
   }
 
-  // Temporarily comment out other elements to test background visibility
-  player.draw(window); // draw avatar
+  for (auto &obstacle : obstacles) {
+    obstacle.draw(window);
+  }
+
+  player.draw(window);
   window.draw(*nameText);
   window.draw(*healthText);
   window.draw(*scoreText);
