@@ -65,7 +65,10 @@ void Game::start(sf::RenderWindow &window) {
   std::cout << "Game started" << std::endl;
 
   // Create obstacles
-  obstacles.emplace_back("../assets/Alien1.png", 650, 600);
+  obstacles.reserve(3);
+  obstacles.emplace_back("../assets/Alien2.png", 650, 600, 550, 600);
+  obstacles.emplace_back("../assets/Alien1.png", 350, 600, 400, 600);
+  obstacles.emplace_back("../assets/Alien2.png", 143, 600, 300, 600);
 }
 
 void Game::update() {
@@ -84,6 +87,10 @@ void Game::update() {
   scoreText->setString(" Score: " + std::to_string(player.score));
 
   std::cout << "Game updated" << std::endl;
+
+  for (auto &obstacle : obstacles) {
+    obstacle.update();
+  }
 }
 
 void Game::render(sf::RenderWindow &window) {

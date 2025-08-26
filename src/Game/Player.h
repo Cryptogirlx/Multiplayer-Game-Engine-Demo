@@ -11,7 +11,11 @@ public:
   enum Direction { UP, DOWN, LEFT, RIGHT };
   void move(Direction direction);
   void setBounds(float width, float height);
+
   void draw(sf::RenderWindow &window);
+
+  void setVerticalBounds(float minY, float maxY);
+  sf::Vector2f getVerticalBounds();
 
   void setPlayerName();
   sf::String getPlayerName();
@@ -30,4 +34,5 @@ private:
   int speed;
   int boundWidth, boundHeight;
   sf::String name;
+  sf::Vector2f verticalBounds;
 };

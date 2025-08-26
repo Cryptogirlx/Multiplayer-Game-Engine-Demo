@@ -3,8 +3,8 @@
 #include <memory>
 
 Player::Player() {
-  x = 250; // Start in playable area (right of text area)
-  y = 100;
+  x = 20; // Start in playable area (right of text area)
+  y = 600;
   health = 100;
   score = 0;
   speed = 4;
@@ -26,12 +26,22 @@ Player::Player() {
   avatarSprite = std::make_unique<sf::Sprite>(avatarTexture);
   avatarSprite->setPosition(
       sf::Vector2f(static_cast<float>(x), static_cast<float>(y)));
+
+  setVerticalBounds(550, 450);
 }
 
 void Player::setBounds(float width, float height) {
   boundWidth = width;
   boundHeight = height;
 }
+void Player::setVerticalBounds(float _minY, float _maxY) {
+  if (_minY > _maxY)
+    std::swap(_minY, _maxY);
+  verticalBounds.x = _minY; // minY
+  verticalBounds.y = _maxY; // maxY
+}
+
+sf::Vector2f Player::getVerticalBounds() { return verticalBounds; }
 
 void Player::draw(sf::RenderWindow &window) {
   if (avatarSprite) {
@@ -55,16 +65,15 @@ void Player::move(Direction direction) {
     break;
   }
 
-  // clamp: keep inside bounds and avoid text area
-  // Text area is roughly from x=0 to x=200, y=0 to y=120
-  if (x < 200) // Don't go into text area on left
-    x = 200;
-  if (y < 0)
-    y = 0;
-  if (x > boundWidth - 50) // Assuming sprite width is 50
-    x = boundWidth - 50;
-  if (y > boundHeight - 50) // Assuming sprite height is 50
-    y = boundHeight - 50;
+  // clamp: keep inside bounds
+  verticalBounds = getVerticalBounds();
+  if (y < verticalBounds.x) {
+    y = verticalBounds.x;
+  }
+
+  if (y > verticalBounds.y) {
+    y = verticalBounds.y;
+  }
 
   // Update avatar position
   if (avatarSprite) {
