@@ -10,6 +10,7 @@ public:
   void start(sf::RenderWindow &window);
   void update();
   void render(sf::RenderWindow &window);
+  void checkCollision(sf::Vector2f previousPosition);
 
   sf::Font font;
 
@@ -24,4 +25,6 @@ private:
   Player player;
   Obstacle obstacle;
   std::vector<Obstacle> obstacles;
+  bool isCollided;
+  bool isRunning;
 };

@@ -1,5 +1,6 @@
 #include "Game.h"
 #include <SFML/Graphics.hpp>
+#include <SFML/Graphics/Rect.hpp>
 #include <filesystem>
 #include <iostream>
 #include <memory>
@@ -8,7 +9,7 @@
 Game::Game() { std::cout << "Game constructor called!" << std::endl; }
 
 void Game::start(sf::RenderWindow &window) {
-
+  isRunning = true;
   // Import font - ADD DEBUGGING
   std::cout << "Attempting to load font..." << std::endl;
   if (!font.openFromFile("../assets/fonts/Conthrax-SemiBold.otf")) {
@@ -72,6 +73,10 @@ void Game::start(sf::RenderWindow &window) {
 }
 
 void Game::update() {
+
+  // save players position before moving
+  sf::Vector2f playerPosition = player.avatarSprite->getPosition();
+
   if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::W)) {
     player.move(Player::UP);
   } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::A)) {
@@ -91,6 +96,8 @@ void Game::update() {
   for (auto &obstacle : obstacles) {
     obstacle.update();
   }
+
+  checkCollision(playerPosition);
 }
 
 void Game::render(sf::RenderWindow &window) {
@@ -113,4 +120,31 @@ void Game::render(sf::RenderWindow &window) {
   window.draw(*scoreText);
 
   std::cout << "Game rendered" << std::endl;
+}
+
+void Game::checkCollision(sf::Vector2f previousPosition) {
+  sf::FloatRect playerBounds = player.avatarSprite->getGlobalBounds();
+
+  for (auto &obstacle : obstacles) {
+    sf::FloatRect obstacleBounds = obstacle.obstacleSprite->getGlobalBounds();
+
+    if (auto overlap = playerBounds.findIntersection(obstacleBounds)) {
+      sf::Vector2f pos = player.avatarSprite->getPosition();
+
+      if (overlap->size.x < overlap->size.y) {
+        if (playerBounds.position.x < obstacleBounds.position.x)
+          pos.x -= overlap->size.x;
+        else
+          pos.x += overlap->size.x;
+      } else {
+        if (playerBounds.position.y < obstacleBounds.position.y)
+          pos.y -= overlap->size.y;
+        else
+          pos.y += overlap->size.y;
+      }
+
+      player.avatarSprite->setPosition(pos);
+      player.health -= 10;
+    }
+  }
 }
