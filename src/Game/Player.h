@@ -16,6 +16,7 @@ public:
 
   void setVerticalBounds(float minY, float maxY);
   sf::Vector2f getVerticalBounds();
+  sf::Vector2f getStartPosition();
 
   void setPlayerName();
   sf::String getPlayerName();
@@ -35,4 +36,5 @@ private:
   int boundWidth, boundHeight;
   sf::String name;
   sf::Vector2f verticalBounds;
+  sf::Vector2f startPosition;
 };

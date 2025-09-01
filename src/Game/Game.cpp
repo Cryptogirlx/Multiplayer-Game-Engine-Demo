@@ -36,7 +36,7 @@ void Game::start(sf::RenderWindow &window) {
   // set initial values of texts
   nameText->setString(" Name: " + player.getPlayerName());
   healthText->setString(" Health: " + std::to_string(player.health));
-  scoreText->setString("Score: " + std::to_string(player.score));
+  scoreText->setString("Racoons collected: " + std::to_string(player.score));
 
   // set game background
   if (!backgroundTexture.loadFromFile("../assets/landing.png")) {
@@ -67,7 +67,7 @@ void Game::start(sf::RenderWindow &window) {
 
   // Create obstacles
   obstacles.reserve(3);
-  obstacles.emplace_back("../assets/Alien2.png", 650, 600, 550, 600);
+  obstacles.emplace_back("../assets/Alien2.png", 650, 600, 500, 600);
   obstacles.emplace_back("../assets/Alien1.png", 350, 600, 400, 600);
   obstacles.emplace_back("../assets/Alien2.png", 143, 600, 300, 600);
 }
@@ -89,7 +89,7 @@ void Game::update() {
 
   // Update text each frame (in case health/score changes)
   healthText->setString(" Health: " + std::to_string(player.health));
-  scoreText->setString(" Score: " + std::to_string(player.score));
+  scoreText->setString(" Raccoons collected: " + std::to_string(player.score));
 
   std::cout << "Game updated" << std::endl;
 
@@ -97,7 +97,7 @@ void Game::update() {
     obstacle.update();
   }
 
-  checkCollision(playerPosition);
+  checkCollision();
 }
 
 void Game::render(sf::RenderWindow &window) {
@@ -122,29 +122,19 @@ void Game::render(sf::RenderWindow &window) {
   std::cout << "Game rendered" << std::endl;
 }
 
-void Game::checkCollision(sf::Vector2f previousPosition) {
-  sf::FloatRect playerBounds = player.avatarSprite->getGlobalBounds();
+void Game::checkCollision() {
+  // sf::FloatRect playerBounds = player.avatarSprite->getGlobalBounds();
+  // sf::Vector2f startPos = player.getStartPosition();
 
-  for (auto &obstacle : obstacles) {
-    sf::FloatRect obstacleBounds = obstacle.obstacleSprite->getGlobalBounds();
+  // for (auto &obstacle : obstacles) {
+  //   sf::FloatRect obstacleBounds =
+  //   obstacle.obstacleSprite->getGlobalBounds();
 
-    if (auto overlap = playerBounds.findIntersection(obstacleBounds)) {
-      sf::Vector2f pos = player.avatarSprite->getPosition();
-
-      if (overlap->size.x < overlap->size.y) {
-        if (playerBounds.position.x < obstacleBounds.position.x)
-          pos.x -= overlap->size.x;
-        else
-          pos.x += overlap->size.x;
-      } else {
-        if (playerBounds.position.y < obstacleBounds.position.y)
-          pos.y -= overlap->size.y;
-        else
-          pos.y += overlap->size.y;
-      }
-
-      player.avatarSprite->setPosition(pos);
-      player.health -= 10;
-    }
-  }
+  //   if (playerBounds.findIntersection(obstacleBounds)) {
+  //     player.avatarSprite->setPosition(startPos);
+  //     player.health -= 10;
+  //     std::cout << "Player hit an obstacle!" << std::endl;
+  //     break;
+  //   }
+  // }
 }

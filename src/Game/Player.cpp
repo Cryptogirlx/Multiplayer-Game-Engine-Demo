@@ -3,8 +3,8 @@
 #include <memory>
 
 Player::Player() {
-  x = 20; // Start in playable area (right of text area)
-  y = 600;
+  x = 10; // Start in playable area (right of text area)
+  y = 550;
   health = 100;
   score = 0;
   speed = 4;
@@ -12,6 +12,7 @@ Player::Player() {
 
   boundWidth = 800;
   boundHeight = 600;
+  startPosition = (sf::Vector2f(static_cast<float>(x), static_cast<float>(y)));
 
   // Load avatar texture
   if (!avatarTexture.loadFromFile("../assets/avatar.png")) {
@@ -24,10 +25,9 @@ Player::Player() {
 
   // Create sprite and set texture
   avatarSprite = std::make_unique<sf::Sprite>(avatarTexture);
-  avatarSprite->setPosition(
-      sf::Vector2f(static_cast<float>(x), static_cast<float>(y)));
+  avatarSprite->setPosition(sf::Vector2f(startPosition));
 
-  setVerticalBounds(550, 450);
+  setVerticalBounds(550, 350);
 }
 
 void Player::setBounds(float width, float height) {
@@ -42,6 +42,7 @@ void Player::setVerticalBounds(float _minY, float _maxY) {
 }
 
 sf::Vector2f Player::getVerticalBounds() { return verticalBounds; }
+sf::Vector2f Player::getStartPosition() { return startPosition; }
 
 void Player::draw(sf::RenderWindow &window) {
   if (avatarSprite) {

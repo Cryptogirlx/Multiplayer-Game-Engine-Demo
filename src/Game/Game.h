@@ -10,7 +10,7 @@ public:
   void start(sf::RenderWindow &window);
   void update();
   void render(sf::RenderWindow &window);
-  void checkCollision(sf::Vector2f previousPosition);
+  void checkCollision();
 
   sf::Font font;
 
