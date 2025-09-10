@@ -48,19 +48,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/bin/cmake
+CMAKE_COMMAND = /opt/homebrew/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/bin/cmake -E rm -f
+RM = /opt/homebrew/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo
+CMAKE_SOURCE_DIR = /Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/build
+CMAKE_BINARY_DIR = /Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/build
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	/usr/local/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/opt/homebrew/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	/usr/local/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/opt/homebrew/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles /Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -225,6 +225,30 @@ src/Game/Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Multiplayer-Game-Engine-Demo.dir/build.make CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Player.cpp.s
 .PHONY : src/Game/Player.cpp.s
 
+src/Game/Racoon.o: src/Game/Racoon.cpp.o
+.PHONY : src/Game/Racoon.o
+
+# target to build an object file
+src/Game/Racoon.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Multiplayer-Game-Engine-Demo.dir/build.make CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Racoon.cpp.o
+.PHONY : src/Game/Racoon.cpp.o
+
+src/Game/Racoon.i: src/Game/Racoon.cpp.i
+.PHONY : src/Game/Racoon.i
+
+# target to preprocess a source file
+src/Game/Racoon.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Multiplayer-Game-Engine-Demo.dir/build.make CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Racoon.cpp.i
+.PHONY : src/Game/Racoon.cpp.i
+
+src/Game/Racoon.s: src/Game/Racoon.cpp.s
+.PHONY : src/Game/Racoon.s
+
+# target to generate assembly for a file
+src/Game/Racoon.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Multiplayer-Game-Engine-Demo.dir/build.make CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Racoon.cpp.s
+.PHONY : src/Game/Racoon.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -270,6 +294,9 @@ help:
 	@echo "... src/Game/Player.o"
 	@echo "... src/Game/Player.i"
 	@echo "... src/Game/Player.s"
+	@echo "... src/Game/Racoon.o"
+	@echo "... src/Game/Racoon.i"
+	@echo "... src/Game/Racoon.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

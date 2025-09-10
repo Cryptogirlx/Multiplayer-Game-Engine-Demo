@@ -1,6 +1,6 @@
-CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Obstacle.cpp.o: \
-  /Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Obstacle.cpp \
-  /Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Obstacle.h \
+CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Racoon.cpp.o: \
+  /Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Racoon.cpp \
+  /Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Raccoon.h \
   /opt/homebrew/include/SFML/Graphics.hpp \
   /opt/homebrew/include/SFML/Graphics/BlendMode.hpp \
   /opt/homebrew/include/SFML/Graphics/Export.hpp \

@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/bin/cmake
+CMAKE_COMMAND = /opt/homebrew/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/bin/cmake -E rm -f
+RM = /opt/homebrew/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo
+CMAKE_SOURCE_DIR = /Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/build
+CMAKE_BINARY_DIR = /Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Multiplayer-Game-Engine-Demo.dir/depend.make
@@ -73,74 +73,88 @@ CMakeFiles/Multiplayer-Game-Engine-Demo.dir/codegen:
 .PHONY : CMakeFiles/Multiplayer-Game-Engine-Demo.dir/codegen
 
 CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/main.cpp.o: CMakeFiles/Multiplayer-Game-Engine-Demo.dir/flags.make
-CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/main.cpp.o: /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/main.cpp
+CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/main.cpp.o: /Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/src/main.cpp
 CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/main.cpp.o: CMakeFiles/Multiplayer-Game-Engine-Demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/main.cpp.o -MF CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/main.cpp.o.d -o CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/main.cpp.o -c /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/main.cpp.o -MF CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/main.cpp.o.d -o CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/main.cpp.o -c /Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/src/main.cpp
 
 CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/main.cpp > CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/src/main.cpp > CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/main.cpp.i
 
 CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/main.cpp -o CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/src/main.cpp -o CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/main.cpp.s
 
 CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Engine/Engine.cpp.o: CMakeFiles/Multiplayer-Game-Engine-Demo.dir/flags.make
-CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Engine/Engine.cpp.o: /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/Engine/Engine.cpp
+CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Engine/Engine.cpp.o: /Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/src/Engine/Engine.cpp
 CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Engine/Engine.cpp.o: CMakeFiles/Multiplayer-Game-Engine-Demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Engine/Engine.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Engine/Engine.cpp.o -MF CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Engine/Engine.cpp.o.d -o CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Engine/Engine.cpp.o -c /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/Engine/Engine.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Engine/Engine.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Engine/Engine.cpp.o -MF CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Engine/Engine.cpp.o.d -o CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Engine/Engine.cpp.o -c /Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/src/Engine/Engine.cpp
 
 CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Engine/Engine.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Engine/Engine.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/Engine/Engine.cpp > CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Engine/Engine.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/src/Engine/Engine.cpp > CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Engine/Engine.cpp.i
 
 CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Engine/Engine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Engine/Engine.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/Engine/Engine.cpp -o CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Engine/Engine.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/src/Engine/Engine.cpp -o CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Engine/Engine.cpp.s
 
 CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Game.cpp.o: CMakeFiles/Multiplayer-Game-Engine-Demo.dir/flags.make
-CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Game.cpp.o: /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Game.cpp
+CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Game.cpp.o: /Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Game.cpp
 CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Game.cpp.o: CMakeFiles/Multiplayer-Game-Engine-Demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Game.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Game.cpp.o -MF CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Game.cpp.o.d -o CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Game.cpp.o -c /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Game.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Game.cpp.o -MF CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Game.cpp.o.d -o CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Game.cpp.o -c /Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Game.cpp
 
 CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Game.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Game.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Game.cpp > CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Game.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Game.cpp > CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Game.cpp.i
 
 CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Game.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Game.cpp -o CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Game.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Game.cpp -o CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Game.cpp.s
 
 CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Player.cpp.o: CMakeFiles/Multiplayer-Game-Engine-Demo.dir/flags.make
-CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Player.cpp.o: /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Player.cpp
+CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Player.cpp.o: /Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Player.cpp
 CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Player.cpp.o: CMakeFiles/Multiplayer-Game-Engine-Demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Player.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Player.cpp.o -MF CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Player.cpp.o.d -o CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Player.cpp.o -c /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Player.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Player.cpp.o -MF CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Player.cpp.o.d -o CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Player.cpp.o -c /Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Player.cpp
 
 CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Player.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Player.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Player.cpp > CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Player.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Player.cpp > CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Player.cpp.i
 
 CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Player.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Player.cpp -o CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Player.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Player.cpp -o CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Player.cpp.s
 
 CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Obstacle.cpp.o: CMakeFiles/Multiplayer-Game-Engine-Demo.dir/flags.make
-CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Obstacle.cpp.o: /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Obstacle.cpp
+CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Obstacle.cpp.o: /Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Obstacle.cpp
 CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Obstacle.cpp.o: CMakeFiles/Multiplayer-Game-Engine-Demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Obstacle.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Obstacle.cpp.o -MF CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Obstacle.cpp.o.d -o CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Obstacle.cpp.o -c /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Obstacle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Obstacle.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Obstacle.cpp.o -MF CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Obstacle.cpp.o.d -o CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Obstacle.cpp.o -c /Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Obstacle.cpp
 
 CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Obstacle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Obstacle.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Obstacle.cpp > CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Obstacle.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Obstacle.cpp > CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Obstacle.cpp.i
 
 CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Obstacle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Obstacle.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Obstacle.cpp -o CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Obstacle.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Obstacle.cpp -o CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Obstacle.cpp.s
+
+CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Racoon.cpp.o: CMakeFiles/Multiplayer-Game-Engine-Demo.dir/flags.make
+CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Racoon.cpp.o: /Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Racoon.cpp
+CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Racoon.cpp.o: CMakeFiles/Multiplayer-Game-Engine-Demo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Racoon.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Racoon.cpp.o -MF CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Racoon.cpp.o.d -o CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Racoon.cpp.o -c /Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Racoon.cpp
+
+CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Racoon.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Racoon.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Racoon.cpp > CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Racoon.cpp.i
+
+CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Racoon.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Racoon.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/src/Game/Racoon.cpp -o CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Racoon.cpp.s
 
 # Object files for target Multiplayer-Game-Engine-Demo
 Multiplayer__Game__Engine__Demo_OBJECTS = \
@@ -148,7 +162,8 @@ Multiplayer__Game__Engine__Demo_OBJECTS = \
 "CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Engine/Engine.cpp.o" \
 "CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Game.cpp.o" \
 "CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Player.cpp.o" \
-"CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Obstacle.cpp.o"
+"CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Obstacle.cpp.o" \
+"CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Racoon.cpp.o"
 
 # External object files for target Multiplayer-Game-Engine-Demo
 Multiplayer__Game__Engine__Demo_EXTERNAL_OBJECTS =
@@ -158,9 +173,10 @@ Multiplayer-Game-Engine-Demo: CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/En
 Multiplayer-Game-Engine-Demo: CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Game.cpp.o
 Multiplayer-Game-Engine-Demo: CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Player.cpp.o
 Multiplayer-Game-Engine-Demo: CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Obstacle.cpp.o
+Multiplayer-Game-Engine-Demo: CMakeFiles/Multiplayer-Game-Engine-Demo.dir/src/Game/Racoon.cpp.o
 Multiplayer-Game-Engine-Demo: CMakeFiles/Multiplayer-Game-Engine-Demo.dir/build.make
 Multiplayer-Game-Engine-Demo: CMakeFiles/Multiplayer-Game-Engine-Demo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Multiplayer-Game-Engine-Demo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Multiplayer-Game-Engine-Demo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Multiplayer-Game-Engine-Demo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -172,6 +188,6 @@ CMakeFiles/Multiplayer-Game-Engine-Demo.dir/clean:
 .PHONY : CMakeFiles/Multiplayer-Game-Engine-Demo.dir/clean
 
 CMakeFiles/Multiplayer-Game-Engine-Demo.dir/depend:
-	cd /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/build /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/build /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles/Multiplayer-Game-Engine-Demo.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo /Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo /Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/build /Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/build /Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles/Multiplayer-Game-Engine-Demo.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/Multiplayer-Game-Engine-Demo.dir/depend
 

@@ -4,7 +4,7 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "/usr/local/share/cmake/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_UNAME"
@@ -20,9 +20,9 @@ events:
     names:
       - "uname"
     candidate_directories:
-      - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin/"
-      - "/Users/cryptogirl/.yarn/bin/"
-      - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/mysql/bin/"
       - "/usr/local/bin/"
       - "/System/Cryptexes/App/usr/bin/"
       - "/usr/bin/"
@@ -32,24 +32,20 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
-      - "/usr/local/go/bin/"
-      - "/usr/local/mysql/bin/"
-      - "/Users/cryptogirl/anaconda3/bin/"
-      - "/Users/cryptogirl/anaconda3/condabin/"
-      - "/Users/cryptogirl/.cargo/bin/"
-      - "/Users/cryptogirl/.foundry/bin/"
+      - "/Users/zsofietubel/.cargo/bin/"
+      - "/Users/zsofietubel/.foundry/bin/"
     searched_directories:
-      - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin/uname"
-      - "/Users/cryptogirl/.yarn/bin/uname"
-      - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin/uname"
+      - "/opt/homebrew/bin/uname"
+      - "/opt/homebrew/sbin/uname"
+      - "/usr/local/mysql/bin/uname"
       - "/usr/local/bin/uname"
       - "/System/Cryptexes/App/usr/bin/uname"
     found: "/usr/bin/uname"
     search_context:
       ENV{PATH}:
-        - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin"
-        - "/Users/cryptogirl/.yarn/bin"
-        - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/mysql/bin"
         - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
         - "/usr/bin"
@@ -59,28 +55,19 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/usr/local/go/bin"
-        - "/usr/local/mysql/bin"
-        - "/Users/cryptogirl/anaconda3/bin"
-        - "/Users/cryptogirl/anaconda3/condabin"
-        - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin"
-        - "/Users/cryptogirl/.yarn/bin"
-        - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin"
-        - "/Users/cryptogirl/.cargo/bin"
-        - "/Users/cryptogirl/.foundry/bin"
-        - "/Users/cryptogirl/.foundry/bin"
-        - "/Users/cryptogirl/.foundry/bin"
+        - "/Users/zsofietubel/.cargo/bin"
+        - "/Users/zsofietubel/.foundry/bin"
   -
     kind: "message-v1"
     backtrace:
-      - "/usr/local/share/cmake/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:212 (message)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      The system is: Darwin - 23.6.0 - x86_64
+      The system is: Darwin - 23.4.0 - arm64
   -
     kind: "find-v1"
     backtrace:
-      - "/usr/local/share/cmake/Modules/CMakeUnixFindMake.cmake:5 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeUnixFindMake.cmake:5 (find_program)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_MAKE_PROGRAM"
@@ -98,9 +85,9 @@ events:
       - "make"
       - "smake"
     candidate_directories:
-      - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin/"
-      - "/Users/cryptogirl/.yarn/bin/"
-      - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/mysql/bin/"
       - "/usr/local/bin/"
       - "/System/Cryptexes/App/usr/bin/"
       - "/usr/bin/"
@@ -110,16 +97,12 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
-      - "/usr/local/go/bin/"
-      - "/usr/local/mysql/bin/"
-      - "/Users/cryptogirl/anaconda3/bin/"
-      - "/Users/cryptogirl/anaconda3/condabin/"
-      - "/Users/cryptogirl/.cargo/bin/"
-      - "/Users/cryptogirl/.foundry/bin/"
+      - "/Users/zsofietubel/.cargo/bin/"
+      - "/Users/zsofietubel/.foundry/bin/"
     searched_directories:
-      - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin/gmake"
-      - "/Users/cryptogirl/.yarn/bin/gmake"
-      - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin/gmake"
+      - "/opt/homebrew/bin/gmake"
+      - "/opt/homebrew/sbin/gmake"
+      - "/usr/local/mysql/bin/gmake"
       - "/usr/local/bin/gmake"
       - "/System/Cryptexes/App/usr/bin/gmake"
       - "/usr/bin/gmake"
@@ -129,23 +112,19 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/gmake"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/gmake"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/gmake"
-      - "/usr/local/go/bin/gmake"
-      - "/usr/local/mysql/bin/gmake"
-      - "/Users/cryptogirl/anaconda3/bin/gmake"
-      - "/Users/cryptogirl/anaconda3/condabin/gmake"
-      - "/Users/cryptogirl/.cargo/bin/gmake"
-      - "/Users/cryptogirl/.foundry/bin/gmake"
-      - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin/make"
-      - "/Users/cryptogirl/.yarn/bin/make"
-      - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin/make"
+      - "/Users/zsofietubel/.cargo/bin/gmake"
+      - "/Users/zsofietubel/.foundry/bin/gmake"
+      - "/opt/homebrew/bin/make"
+      - "/opt/homebrew/sbin/make"
+      - "/usr/local/mysql/bin/make"
       - "/usr/local/bin/make"
       - "/System/Cryptexes/App/usr/bin/make"
     found: "/usr/bin/make"
     search_context:
       ENV{PATH}:
-        - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin"
-        - "/Users/cryptogirl/.yarn/bin"
-        - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/mysql/bin"
         - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
         - "/usr/bin"
@@ -155,22 +134,13 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/usr/local/go/bin"
-        - "/usr/local/mysql/bin"
-        - "/Users/cryptogirl/anaconda3/bin"
-        - "/Users/cryptogirl/anaconda3/condabin"
-        - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin"
-        - "/Users/cryptogirl/.yarn/bin"
-        - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin"
-        - "/Users/cryptogirl/.cargo/bin"
-        - "/Users/cryptogirl/.foundry/bin"
-        - "/Users/cryptogirl/.foundry/bin"
-        - "/Users/cryptogirl/.foundry/bin"
+        - "/Users/zsofietubel/.cargo/bin"
+        - "/Users/zsofietubel/.foundry/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompiler.cmake:73 (find_program)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:64 (_cmake_find_compiler)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompiler.cmake:73 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:64 (_cmake_find_compiler)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_C_COMPILER"
@@ -192,9 +162,9 @@ events:
       - "icx"
       - "clang"
     candidate_directories:
-      - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin/"
-      - "/Users/cryptogirl/.yarn/bin/"
-      - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/mysql/bin/"
       - "/usr/local/bin/"
       - "/System/Cryptexes/App/usr/bin/"
       - "/usr/bin/"
@@ -204,24 +174,20 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
-      - "/usr/local/go/bin/"
-      - "/usr/local/mysql/bin/"
-      - "/Users/cryptogirl/anaconda3/bin/"
-      - "/Users/cryptogirl/anaconda3/condabin/"
-      - "/Users/cryptogirl/.cargo/bin/"
-      - "/Users/cryptogirl/.foundry/bin/"
+      - "/Users/zsofietubel/.cargo/bin/"
+      - "/Users/zsofietubel/.foundry/bin/"
     searched_directories:
-      - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin/cc"
-      - "/Users/cryptogirl/.yarn/bin/cc"
-      - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin/cc"
+      - "/opt/homebrew/bin/cc"
+      - "/opt/homebrew/sbin/cc"
+      - "/usr/local/mysql/bin/cc"
       - "/usr/local/bin/cc"
       - "/System/Cryptexes/App/usr/bin/cc"
     found: "/usr/bin/cc"
     search_context:
       ENV{PATH}:
-        - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin"
-        - "/Users/cryptogirl/.yarn/bin"
-        - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/mysql/bin"
         - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
         - "/usr/bin"
@@ -231,25 +197,16 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/usr/local/go/bin"
-        - "/usr/local/mysql/bin"
-        - "/Users/cryptogirl/anaconda3/bin"
-        - "/Users/cryptogirl/anaconda3/condabin"
-        - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin"
-        - "/Users/cryptogirl/.yarn/bin"
-        - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin"
-        - "/Users/cryptogirl/.cargo/bin"
-        - "/Users/cryptogirl/.foundry/bin"
-        - "/Users/cryptogirl/.foundry/bin"
-        - "/Users/cryptogirl/.foundry/bin"
+        - "/Users/zsofietubel/.cargo/bin"
+        - "/Users/zsofietubel/.foundry/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:2 (project)"
     mode: "file"
     variable: "src_in"
@@ -265,13 +222,13 @@ events:
     names:
       - "CMakeCCompilerId.c.in"
     candidate_directories:
-      - "/usr/local/share/cmake/Modules/"
-    found: "/usr/local/share/cmake/Modules/CMakeCCompilerId.c.in"
+      - "/opt/homebrew/share/cmake/Modules/"
+    found: "/opt/homebrew/share/cmake/Modules/CMakeCCompilerId.c.in"
     search_context:
       ENV{PATH}:
-        - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin"
-        - "/Users/cryptogirl/.yarn/bin"
-        - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/mysql/bin"
         - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
         - "/usr/bin"
@@ -281,23 +238,14 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/usr/local/go/bin"
-        - "/usr/local/mysql/bin"
-        - "/Users/cryptogirl/anaconda3/bin"
-        - "/Users/cryptogirl/anaconda3/condabin"
-        - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin"
-        - "/Users/cryptogirl/.yarn/bin"
-        - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin"
-        - "/Users/cryptogirl/.cargo/bin"
-        - "/Users/cryptogirl/.foundry/bin"
-        - "/Users/cryptogirl/.foundry/bin"
-        - "/Users/cryptogirl/.foundry/bin"
+        - "/Users/zsofietubel/.cargo/bin"
+        - "/Users/zsofietubel/.foundry/bin"
   -
     kind: "message-v1"
     backtrace:
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
@@ -312,37 +260,36 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
       
       The C compiler identification is AppleClang, found in:
-        /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles/4.1.0/CompilerIdC/a.out
+        /Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles/4.1.1/CompilerIdC/a.out
       
   -
     kind: "message-v1"
     backtrace:
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:290 (message)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:290 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Detecting C compiler apple sysroot: "/usr/bin/cc" "-E" "apple-sdk.c"
         # 1 "apple-sdk.c"
         # 1 "<built-in>" 1
         # 1 "<built-in>" 3
-        # 394 "<built-in>" 3
+        # 418 "<built-in>" 3
         # 1 "<command line>" 1
         # 1 "<built-in>" 2
         # 1 "apple-sdk.c" 2
         # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 1 3 4
-        # 89 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 3 4
+        # 86 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 3 4
         # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h" 1 3 4
-        # 90 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 2 3 4
-        # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/TargetConditionals.h" 1 3 4
-        # 91 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 2 3 4
-        # 207 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 3 4
+        # 87 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 2 3 4
+        # 206 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 3 4
         # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h" 1 3 4
         # 177 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h" 3 4
         # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h" 1 3 4
-        # 178 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h" 2 3 4
+        # 176 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h" 3 4
         # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h" 1 3 4
-        # 179 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h" 2 3 4
-        # 208 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 2 3 4
+        # 177 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h" 2 3 4
+        # 178 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h" 2 3 4
+        # 207 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 2 3 4
         # 2 "apple-sdk.c" 2
         
         
@@ -350,8 +297,8 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "/usr/local/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_AR"
@@ -368,9 +315,9 @@ events:
       - "ar"
     candidate_directories:
       - "/usr/bin/"
-      - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin/"
-      - "/Users/cryptogirl/.yarn/bin/"
-      - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/mysql/bin/"
       - "/usr/local/bin/"
       - "/System/Cryptexes/App/usr/bin/"
       - "/bin/"
@@ -379,18 +326,14 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
-      - "/usr/local/go/bin/"
-      - "/usr/local/mysql/bin/"
-      - "/Users/cryptogirl/anaconda3/bin/"
-      - "/Users/cryptogirl/anaconda3/condabin/"
-      - "/Users/cryptogirl/.cargo/bin/"
-      - "/Users/cryptogirl/.foundry/bin/"
+      - "/Users/zsofietubel/.cargo/bin/"
+      - "/Users/zsofietubel/.foundry/bin/"
     found: "/usr/bin/ar"
     search_context:
       ENV{PATH}:
-        - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin"
-        - "/Users/cryptogirl/.yarn/bin"
-        - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/mysql/bin"
         - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
         - "/usr/bin"
@@ -400,22 +343,13 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/usr/local/go/bin"
-        - "/usr/local/mysql/bin"
-        - "/Users/cryptogirl/anaconda3/bin"
-        - "/Users/cryptogirl/anaconda3/condabin"
-        - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin"
-        - "/Users/cryptogirl/.yarn/bin"
-        - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin"
-        - "/Users/cryptogirl/.cargo/bin"
-        - "/Users/cryptogirl/.foundry/bin"
-        - "/Users/cryptogirl/.foundry/bin"
-        - "/Users/cryptogirl/.foundry/bin"
+        - "/Users/zsofietubel/.cargo/bin"
+        - "/Users/zsofietubel/.foundry/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "/usr/local/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_RANLIB"
@@ -432,9 +366,9 @@ events:
       - "ranlib"
     candidate_directories:
       - "/usr/bin/"
-      - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin/"
-      - "/Users/cryptogirl/.yarn/bin/"
-      - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/mysql/bin/"
       - "/usr/local/bin/"
       - "/System/Cryptexes/App/usr/bin/"
       - "/bin/"
@@ -443,18 +377,14 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
-      - "/usr/local/go/bin/"
-      - "/usr/local/mysql/bin/"
-      - "/Users/cryptogirl/anaconda3/bin/"
-      - "/Users/cryptogirl/anaconda3/condabin/"
-      - "/Users/cryptogirl/.cargo/bin/"
-      - "/Users/cryptogirl/.foundry/bin/"
+      - "/Users/zsofietubel/.cargo/bin/"
+      - "/Users/zsofietubel/.foundry/bin/"
     found: "/usr/bin/ranlib"
     search_context:
       ENV{PATH}:
-        - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin"
-        - "/Users/cryptogirl/.yarn/bin"
-        - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/mysql/bin"
         - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
         - "/usr/bin"
@@ -464,22 +394,13 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/usr/local/go/bin"
-        - "/usr/local/mysql/bin"
-        - "/Users/cryptogirl/anaconda3/bin"
-        - "/Users/cryptogirl/anaconda3/condabin"
-        - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin"
-        - "/Users/cryptogirl/.yarn/bin"
-        - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin"
-        - "/Users/cryptogirl/.cargo/bin"
-        - "/Users/cryptogirl/.foundry/bin"
-        - "/Users/cryptogirl/.foundry/bin"
-        - "/Users/cryptogirl/.foundry/bin"
+        - "/Users/zsofietubel/.cargo/bin"
+        - "/Users/zsofietubel/.foundry/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "/usr/local/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_STRIP"
@@ -496,9 +417,9 @@ events:
       - "strip"
     candidate_directories:
       - "/usr/bin/"
-      - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin/"
-      - "/Users/cryptogirl/.yarn/bin/"
-      - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/mysql/bin/"
       - "/usr/local/bin/"
       - "/System/Cryptexes/App/usr/bin/"
       - "/bin/"
@@ -507,18 +428,14 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
-      - "/usr/local/go/bin/"
-      - "/usr/local/mysql/bin/"
-      - "/Users/cryptogirl/anaconda3/bin/"
-      - "/Users/cryptogirl/anaconda3/condabin/"
-      - "/Users/cryptogirl/.cargo/bin/"
-      - "/Users/cryptogirl/.foundry/bin/"
+      - "/Users/zsofietubel/.cargo/bin/"
+      - "/Users/zsofietubel/.foundry/bin/"
     found: "/usr/bin/strip"
     search_context:
       ENV{PATH}:
-        - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin"
-        - "/Users/cryptogirl/.yarn/bin"
-        - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/mysql/bin"
         - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
         - "/usr/bin"
@@ -528,22 +445,13 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/usr/local/go/bin"
-        - "/usr/local/mysql/bin"
-        - "/Users/cryptogirl/anaconda3/bin"
-        - "/Users/cryptogirl/anaconda3/condabin"
-        - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin"
-        - "/Users/cryptogirl/.yarn/bin"
-        - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin"
-        - "/Users/cryptogirl/.cargo/bin"
-        - "/Users/cryptogirl/.foundry/bin"
-        - "/Users/cryptogirl/.foundry/bin"
-        - "/Users/cryptogirl/.foundry/bin"
+        - "/Users/zsofietubel/.cargo/bin"
+        - "/Users/zsofietubel/.foundry/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "/usr/local/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_LINKER"
@@ -560,9 +468,9 @@ events:
       - "ld"
     candidate_directories:
       - "/usr/bin/"
-      - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin/"
-      - "/Users/cryptogirl/.yarn/bin/"
-      - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/mysql/bin/"
       - "/usr/local/bin/"
       - "/System/Cryptexes/App/usr/bin/"
       - "/bin/"
@@ -571,18 +479,14 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
-      - "/usr/local/go/bin/"
-      - "/usr/local/mysql/bin/"
-      - "/Users/cryptogirl/anaconda3/bin/"
-      - "/Users/cryptogirl/anaconda3/condabin/"
-      - "/Users/cryptogirl/.cargo/bin/"
-      - "/Users/cryptogirl/.foundry/bin/"
+      - "/Users/zsofietubel/.cargo/bin/"
+      - "/Users/zsofietubel/.foundry/bin/"
     found: "/usr/bin/ld"
     search_context:
       ENV{PATH}:
-        - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin"
-        - "/Users/cryptogirl/.yarn/bin"
-        - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/mysql/bin"
         - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
         - "/usr/bin"
@@ -592,22 +496,13 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/usr/local/go/bin"
-        - "/usr/local/mysql/bin"
-        - "/Users/cryptogirl/anaconda3/bin"
-        - "/Users/cryptogirl/anaconda3/condabin"
-        - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin"
-        - "/Users/cryptogirl/.yarn/bin"
-        - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin"
-        - "/Users/cryptogirl/.cargo/bin"
-        - "/Users/cryptogirl/.foundry/bin"
-        - "/Users/cryptogirl/.foundry/bin"
-        - "/Users/cryptogirl/.foundry/bin"
+        - "/Users/zsofietubel/.cargo/bin"
+        - "/Users/zsofietubel/.foundry/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "/usr/local/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_NM"
@@ -624,9 +519,9 @@ events:
       - "nm"
     candidate_directories:
       - "/usr/bin/"
-      - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin/"
-      - "/Users/cryptogirl/.yarn/bin/"
-      - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/mysql/bin/"
       - "/usr/local/bin/"
       - "/System/Cryptexes/App/usr/bin/"
       - "/bin/"
@@ -635,18 +530,14 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
-      - "/usr/local/go/bin/"
-      - "/usr/local/mysql/bin/"
-      - "/Users/cryptogirl/anaconda3/bin/"
-      - "/Users/cryptogirl/anaconda3/condabin/"
-      - "/Users/cryptogirl/.cargo/bin/"
-      - "/Users/cryptogirl/.foundry/bin/"
+      - "/Users/zsofietubel/.cargo/bin/"
+      - "/Users/zsofietubel/.foundry/bin/"
     found: "/usr/bin/nm"
     search_context:
       ENV{PATH}:
-        - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin"
-        - "/Users/cryptogirl/.yarn/bin"
-        - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/mysql/bin"
         - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
         - "/usr/bin"
@@ -656,22 +547,13 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/usr/local/go/bin"
-        - "/usr/local/mysql/bin"
-        - "/Users/cryptogirl/anaconda3/bin"
-        - "/Users/cryptogirl/anaconda3/condabin"
-        - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin"
-        - "/Users/cryptogirl/.yarn/bin"
-        - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin"
-        - "/Users/cryptogirl/.cargo/bin"
-        - "/Users/cryptogirl/.foundry/bin"
-        - "/Users/cryptogirl/.foundry/bin"
-        - "/Users/cryptogirl/.foundry/bin"
+        - "/Users/zsofietubel/.cargo/bin"
+        - "/Users/zsofietubel/.foundry/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "/usr/local/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_OBJDUMP"
@@ -688,9 +570,9 @@ events:
       - "objdump"
     candidate_directories:
       - "/usr/bin/"
-      - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin/"
-      - "/Users/cryptogirl/.yarn/bin/"
-      - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/mysql/bin/"
       - "/usr/local/bin/"
       - "/System/Cryptexes/App/usr/bin/"
       - "/bin/"
@@ -699,18 +581,14 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
-      - "/usr/local/go/bin/"
-      - "/usr/local/mysql/bin/"
-      - "/Users/cryptogirl/anaconda3/bin/"
-      - "/Users/cryptogirl/anaconda3/condabin/"
-      - "/Users/cryptogirl/.cargo/bin/"
-      - "/Users/cryptogirl/.foundry/bin/"
+      - "/Users/zsofietubel/.cargo/bin/"
+      - "/Users/zsofietubel/.foundry/bin/"
     found: "/usr/bin/objdump"
     search_context:
       ENV{PATH}:
-        - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin"
-        - "/Users/cryptogirl/.yarn/bin"
-        - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/mysql/bin"
         - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
         - "/usr/bin"
@@ -720,22 +598,13 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/usr/local/go/bin"
-        - "/usr/local/mysql/bin"
-        - "/Users/cryptogirl/anaconda3/bin"
-        - "/Users/cryptogirl/anaconda3/condabin"
-        - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin"
-        - "/Users/cryptogirl/.yarn/bin"
-        - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin"
-        - "/Users/cryptogirl/.cargo/bin"
-        - "/Users/cryptogirl/.foundry/bin"
-        - "/Users/cryptogirl/.foundry/bin"
-        - "/Users/cryptogirl/.foundry/bin"
+        - "/Users/zsofietubel/.cargo/bin"
+        - "/Users/zsofietubel/.foundry/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "/usr/local/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_OBJCOPY"
@@ -752,9 +621,9 @@ events:
       - "objcopy"
     candidate_directories:
       - "/usr/bin/"
-      - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin/"
-      - "/Users/cryptogirl/.yarn/bin/"
-      - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/mysql/bin/"
       - "/usr/local/bin/"
       - "/System/Cryptexes/App/usr/bin/"
       - "/bin/"
@@ -763,17 +632,13 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
-      - "/usr/local/go/bin/"
-      - "/usr/local/mysql/bin/"
-      - "/Users/cryptogirl/anaconda3/bin/"
-      - "/Users/cryptogirl/anaconda3/condabin/"
-      - "/Users/cryptogirl/.cargo/bin/"
-      - "/Users/cryptogirl/.foundry/bin/"
+      - "/Users/zsofietubel/.cargo/bin/"
+      - "/Users/zsofietubel/.foundry/bin/"
     searched_directories:
       - "/usr/bin/objcopy"
-      - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin/objcopy"
-      - "/Users/cryptogirl/.yarn/bin/objcopy"
-      - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin/objcopy"
+      - "/opt/homebrew/bin/objcopy"
+      - "/opt/homebrew/sbin/objcopy"
+      - "/usr/local/mysql/bin/objcopy"
       - "/usr/local/bin/objcopy"
       - "/System/Cryptexes/App/usr/bin/objcopy"
       - "/bin/objcopy"
@@ -782,18 +647,14 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/objcopy"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/objcopy"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/objcopy"
-      - "/usr/local/go/bin/objcopy"
-      - "/usr/local/mysql/bin/objcopy"
-      - "/Users/cryptogirl/anaconda3/bin/objcopy"
-      - "/Users/cryptogirl/anaconda3/condabin/objcopy"
-      - "/Users/cryptogirl/.cargo/bin/objcopy"
-      - "/Users/cryptogirl/.foundry/bin/objcopy"
+      - "/Users/zsofietubel/.cargo/bin/objcopy"
+      - "/Users/zsofietubel/.foundry/bin/objcopy"
     found: false
     search_context:
       ENV{PATH}:
-        - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin"
-        - "/Users/cryptogirl/.yarn/bin"
-        - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/mysql/bin"
         - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
         - "/usr/bin"
@@ -803,22 +664,13 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/usr/local/go/bin"
-        - "/usr/local/mysql/bin"
-        - "/Users/cryptogirl/anaconda3/bin"
-        - "/Users/cryptogirl/anaconda3/condabin"
-        - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin"
-        - "/Users/cryptogirl/.yarn/bin"
-        - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin"
-        - "/Users/cryptogirl/.cargo/bin"
-        - "/Users/cryptogirl/.foundry/bin"
-        - "/Users/cryptogirl/.foundry/bin"
-        - "/Users/cryptogirl/.foundry/bin"
+        - "/Users/zsofietubel/.cargo/bin"
+        - "/Users/zsofietubel/.foundry/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "/usr/local/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_READELF"
@@ -835,9 +687,9 @@ events:
       - "readelf"
     candidate_directories:
       - "/usr/bin/"
-      - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin/"
-      - "/Users/cryptogirl/.yarn/bin/"
-      - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/mysql/bin/"
       - "/usr/local/bin/"
       - "/System/Cryptexes/App/usr/bin/"
       - "/bin/"
@@ -846,17 +698,13 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
-      - "/usr/local/go/bin/"
-      - "/usr/local/mysql/bin/"
-      - "/Users/cryptogirl/anaconda3/bin/"
-      - "/Users/cryptogirl/anaconda3/condabin/"
-      - "/Users/cryptogirl/.cargo/bin/"
-      - "/Users/cryptogirl/.foundry/bin/"
+      - "/Users/zsofietubel/.cargo/bin/"
+      - "/Users/zsofietubel/.foundry/bin/"
     searched_directories:
       - "/usr/bin/readelf"
-      - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin/readelf"
-      - "/Users/cryptogirl/.yarn/bin/readelf"
-      - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin/readelf"
+      - "/opt/homebrew/bin/readelf"
+      - "/opt/homebrew/sbin/readelf"
+      - "/usr/local/mysql/bin/readelf"
       - "/usr/local/bin/readelf"
       - "/System/Cryptexes/App/usr/bin/readelf"
       - "/bin/readelf"
@@ -865,18 +713,14 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/readelf"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/readelf"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/readelf"
-      - "/usr/local/go/bin/readelf"
-      - "/usr/local/mysql/bin/readelf"
-      - "/Users/cryptogirl/anaconda3/bin/readelf"
-      - "/Users/cryptogirl/anaconda3/condabin/readelf"
-      - "/Users/cryptogirl/.cargo/bin/readelf"
-      - "/Users/cryptogirl/.foundry/bin/readelf"
+      - "/Users/zsofietubel/.cargo/bin/readelf"
+      - "/Users/zsofietubel/.foundry/bin/readelf"
     found: false
     search_context:
       ENV{PATH}:
-        - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin"
-        - "/Users/cryptogirl/.yarn/bin"
-        - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/mysql/bin"
         - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
         - "/usr/bin"
@@ -886,22 +730,13 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/usr/local/go/bin"
-        - "/usr/local/mysql/bin"
-        - "/Users/cryptogirl/anaconda3/bin"
-        - "/Users/cryptogirl/anaconda3/condabin"
-        - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin"
-        - "/Users/cryptogirl/.yarn/bin"
-        - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin"
-        - "/Users/cryptogirl/.cargo/bin"
-        - "/Users/cryptogirl/.foundry/bin"
-        - "/Users/cryptogirl/.foundry/bin"
-        - "/Users/cryptogirl/.foundry/bin"
+        - "/Users/zsofietubel/.cargo/bin"
+        - "/Users/zsofietubel/.foundry/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "/usr/local/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_DLLTOOL"
@@ -918,9 +753,9 @@ events:
       - "dlltool"
     candidate_directories:
       - "/usr/bin/"
-      - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin/"
-      - "/Users/cryptogirl/.yarn/bin/"
-      - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/mysql/bin/"
       - "/usr/local/bin/"
       - "/System/Cryptexes/App/usr/bin/"
       - "/bin/"
@@ -929,17 +764,13 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
-      - "/usr/local/go/bin/"
-      - "/usr/local/mysql/bin/"
-      - "/Users/cryptogirl/anaconda3/bin/"
-      - "/Users/cryptogirl/anaconda3/condabin/"
-      - "/Users/cryptogirl/.cargo/bin/"
-      - "/Users/cryptogirl/.foundry/bin/"
+      - "/Users/zsofietubel/.cargo/bin/"
+      - "/Users/zsofietubel/.foundry/bin/"
     searched_directories:
       - "/usr/bin/dlltool"
-      - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin/dlltool"
-      - "/Users/cryptogirl/.yarn/bin/dlltool"
-      - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin/dlltool"
+      - "/opt/homebrew/bin/dlltool"
+      - "/opt/homebrew/sbin/dlltool"
+      - "/usr/local/mysql/bin/dlltool"
       - "/usr/local/bin/dlltool"
       - "/System/Cryptexes/App/usr/bin/dlltool"
       - "/bin/dlltool"
@@ -948,18 +779,14 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/dlltool"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/dlltool"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/dlltool"
-      - "/usr/local/go/bin/dlltool"
-      - "/usr/local/mysql/bin/dlltool"
-      - "/Users/cryptogirl/anaconda3/bin/dlltool"
-      - "/Users/cryptogirl/anaconda3/condabin/dlltool"
-      - "/Users/cryptogirl/.cargo/bin/dlltool"
-      - "/Users/cryptogirl/.foundry/bin/dlltool"
+      - "/Users/zsofietubel/.cargo/bin/dlltool"
+      - "/Users/zsofietubel/.foundry/bin/dlltool"
     found: false
     search_context:
       ENV{PATH}:
-        - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin"
-        - "/Users/cryptogirl/.yarn/bin"
-        - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/mysql/bin"
         - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
         - "/usr/bin"
@@ -969,22 +796,13 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/usr/local/go/bin"
-        - "/usr/local/mysql/bin"
-        - "/Users/cryptogirl/anaconda3/bin"
-        - "/Users/cryptogirl/anaconda3/condabin"
-        - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin"
-        - "/Users/cryptogirl/.yarn/bin"
-        - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin"
-        - "/Users/cryptogirl/.cargo/bin"
-        - "/Users/cryptogirl/.foundry/bin"
-        - "/Users/cryptogirl/.foundry/bin"
-        - "/Users/cryptogirl/.foundry/bin"
+        - "/Users/zsofietubel/.cargo/bin"
+        - "/Users/zsofietubel/.foundry/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "/usr/local/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_ADDR2LINE"
@@ -1001,9 +819,9 @@ events:
       - "addr2line"
     candidate_directories:
       - "/usr/bin/"
-      - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin/"
-      - "/Users/cryptogirl/.yarn/bin/"
-      - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/mysql/bin/"
       - "/usr/local/bin/"
       - "/System/Cryptexes/App/usr/bin/"
       - "/bin/"
@@ -1012,17 +830,13 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
-      - "/usr/local/go/bin/"
-      - "/usr/local/mysql/bin/"
-      - "/Users/cryptogirl/anaconda3/bin/"
-      - "/Users/cryptogirl/anaconda3/condabin/"
-      - "/Users/cryptogirl/.cargo/bin/"
-      - "/Users/cryptogirl/.foundry/bin/"
+      - "/Users/zsofietubel/.cargo/bin/"
+      - "/Users/zsofietubel/.foundry/bin/"
     searched_directories:
       - "/usr/bin/addr2line"
-      - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin/addr2line"
-      - "/Users/cryptogirl/.yarn/bin/addr2line"
-      - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin/addr2line"
+      - "/opt/homebrew/bin/addr2line"
+      - "/opt/homebrew/sbin/addr2line"
+      - "/usr/local/mysql/bin/addr2line"
       - "/usr/local/bin/addr2line"
       - "/System/Cryptexes/App/usr/bin/addr2line"
       - "/bin/addr2line"
@@ -1031,18 +845,14 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/addr2line"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/addr2line"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/addr2line"
-      - "/usr/local/go/bin/addr2line"
-      - "/usr/local/mysql/bin/addr2line"
-      - "/Users/cryptogirl/anaconda3/bin/addr2line"
-      - "/Users/cryptogirl/anaconda3/condabin/addr2line"
-      - "/Users/cryptogirl/.cargo/bin/addr2line"
-      - "/Users/cryptogirl/.foundry/bin/addr2line"
+      - "/Users/zsofietubel/.cargo/bin/addr2line"
+      - "/Users/zsofietubel/.foundry/bin/addr2line"
     found: false
     search_context:
       ENV{PATH}:
-        - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin"
-        - "/Users/cryptogirl/.yarn/bin"
-        - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/mysql/bin"
         - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
         - "/usr/bin"
@@ -1052,22 +862,13 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/usr/local/go/bin"
-        - "/usr/local/mysql/bin"
-        - "/Users/cryptogirl/anaconda3/bin"
-        - "/Users/cryptogirl/anaconda3/condabin"
-        - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin"
-        - "/Users/cryptogirl/.yarn/bin"
-        - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin"
-        - "/Users/cryptogirl/.cargo/bin"
-        - "/Users/cryptogirl/.foundry/bin"
-        - "/Users/cryptogirl/.foundry/bin"
-        - "/Users/cryptogirl/.foundry/bin"
+        - "/Users/zsofietubel/.cargo/bin"
+        - "/Users/zsofietubel/.foundry/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "/usr/local/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_TAPI"
@@ -1084,9 +885,9 @@ events:
       - "tapi"
     candidate_directories:
       - "/usr/bin/"
-      - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin/"
-      - "/Users/cryptogirl/.yarn/bin/"
-      - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/mysql/bin/"
       - "/usr/local/bin/"
       - "/System/Cryptexes/App/usr/bin/"
       - "/bin/"
@@ -1095,17 +896,13 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
-      - "/usr/local/go/bin/"
-      - "/usr/local/mysql/bin/"
-      - "/Users/cryptogirl/anaconda3/bin/"
-      - "/Users/cryptogirl/anaconda3/condabin/"
-      - "/Users/cryptogirl/.cargo/bin/"
-      - "/Users/cryptogirl/.foundry/bin/"
+      - "/Users/zsofietubel/.cargo/bin/"
+      - "/Users/zsofietubel/.foundry/bin/"
     searched_directories:
       - "/usr/bin/tapi"
-      - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin/tapi"
-      - "/Users/cryptogirl/.yarn/bin/tapi"
-      - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin/tapi"
+      - "/opt/homebrew/bin/tapi"
+      - "/opt/homebrew/sbin/tapi"
+      - "/usr/local/mysql/bin/tapi"
       - "/usr/local/bin/tapi"
       - "/System/Cryptexes/App/usr/bin/tapi"
       - "/bin/tapi"
@@ -1114,14 +911,14 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/tapi"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/tapi"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/tapi"
-      - "/usr/local/go/bin/tapi"
-      - "/usr/local/mysql/bin/tapi"
-    found: "/Users/cryptogirl/anaconda3/bin/tapi"
+      - "/Users/zsofietubel/.cargo/bin/tapi"
+      - "/Users/zsofietubel/.foundry/bin/tapi"
+    found: false
     search_context:
       ENV{PATH}:
-        - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin"
-        - "/Users/cryptogirl/.yarn/bin"
-        - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/mysql/bin"
         - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
         - "/usr/bin"
@@ -1131,22 +928,13 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/usr/local/go/bin"
-        - "/usr/local/mysql/bin"
-        - "/Users/cryptogirl/anaconda3/bin"
-        - "/Users/cryptogirl/anaconda3/condabin"
-        - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin"
-        - "/Users/cryptogirl/.yarn/bin"
-        - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin"
-        - "/Users/cryptogirl/.cargo/bin"
-        - "/Users/cryptogirl/.foundry/bin"
-        - "/Users/cryptogirl/.foundry/bin"
-        - "/Users/cryptogirl/.foundry/bin"
+        - "/Users/zsofietubel/.cargo/bin"
+        - "/Users/zsofietubel/.foundry/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompiler.cmake:54 (find_program)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:69 (_cmake_find_compiler)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompiler.cmake:54 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:69 (_cmake_find_compiler)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_CXX_COMPILER"
@@ -1172,9 +960,9 @@ events:
     found: "/usr/bin/c++"
     search_context:
       ENV{PATH}:
-        - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin"
-        - "/Users/cryptogirl/.yarn/bin"
-        - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/mysql/bin"
         - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
         - "/usr/bin"
@@ -1184,25 +972,16 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/usr/local/go/bin"
-        - "/usr/local/mysql/bin"
-        - "/Users/cryptogirl/anaconda3/bin"
-        - "/Users/cryptogirl/anaconda3/condabin"
-        - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin"
-        - "/Users/cryptogirl/.yarn/bin"
-        - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin"
-        - "/Users/cryptogirl/.cargo/bin"
-        - "/Users/cryptogirl/.foundry/bin"
-        - "/Users/cryptogirl/.foundry/bin"
-        - "/Users/cryptogirl/.foundry/bin"
+        - "/Users/zsofietubel/.cargo/bin"
+        - "/Users/zsofietubel/.foundry/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:2 (project)"
     mode: "file"
     variable: "src_in"
@@ -1218,13 +997,13 @@ events:
     names:
       - "CMakeCXXCompilerId.cpp.in"
     candidate_directories:
-      - "/usr/local/share/cmake/Modules/"
-    found: "/usr/local/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
+      - "/opt/homebrew/share/cmake/Modules/"
+    found: "/opt/homebrew/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
     search_context:
       ENV{PATH}:
-        - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin"
-        - "/Users/cryptogirl/.yarn/bin"
-        - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/mysql/bin"
         - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
         - "/usr/bin"
@@ -1234,23 +1013,14 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/usr/local/go/bin"
-        - "/usr/local/mysql/bin"
-        - "/Users/cryptogirl/anaconda3/bin"
-        - "/Users/cryptogirl/anaconda3/condabin"
-        - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin"
-        - "/Users/cryptogirl/.yarn/bin"
-        - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin"
-        - "/Users/cryptogirl/.cargo/bin"
-        - "/Users/cryptogirl/.foundry/bin"
-        - "/Users/cryptogirl/.foundry/bin"
-        - "/Users/cryptogirl/.foundry/bin"
+        - "/Users/zsofietubel/.cargo/bin"
+        - "/Users/zsofietubel/.foundry/bin"
   -
     kind: "message-v1"
     backtrace:
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
@@ -1265,37 +1035,36 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
       
       The CXX compiler identification is AppleClang, found in:
-        /Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles/4.1.0/CompilerIdCXX/a.out
+        /Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles/4.1.1/CompilerIdCXX/a.out
       
   -
     kind: "message-v1"
     backtrace:
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerId.cmake:290 (message)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:290 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Detecting CXX compiler apple sysroot: "/usr/bin/c++" "-E" "apple-sdk.cpp"
         # 1 "apple-sdk.cpp"
         # 1 "<built-in>" 1
         # 1 "<built-in>" 3
-        # 409 "<built-in>" 3
+        # 433 "<built-in>" 3
         # 1 "<command line>" 1
         # 1 "<built-in>" 2
         # 1 "apple-sdk.cpp" 2
         # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 1 3 4
-        # 89 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 3 4
+        # 86 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 3 4
         # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h" 1 3 4
-        # 90 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 2 3 4
-        # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/TargetConditionals.h" 1 3 4
-        # 91 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 2 3 4
-        # 207 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 3 4
+        # 87 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 2 3 4
+        # 206 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 3 4
         # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h" 1 3 4
         # 177 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h" 3 4
         # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h" 1 3 4
-        # 178 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h" 2 3 4
+        # 176 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h" 3 4
         # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h" 1 3 4
-        # 179 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h" 2 3 4
-        # 208 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 2 3 4
+        # 177 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h" 2 3 4
+        # 178 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h" 2 3 4
+        # 207 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 2 3 4
         # 2 "apple-sdk.cpp" 2
         
         
@@ -1303,8 +1072,8 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "/usr/local/share/cmake/Modules/Platform/Darwin.cmake:76 (find_program)"
-      - "/usr/local/share/cmake/Modules/CMakeSystemSpecificInformation.cmake:32 (include)"
+      - "/opt/homebrew/share/cmake/Modules/Platform/Darwin.cmake:76 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInformation.cmake:32 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_INSTALL_NAME_TOOL"
@@ -1320,9 +1089,9 @@ events:
     names:
       - "install_name_tool"
     candidate_directories:
-      - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin/"
-      - "/Users/cryptogirl/.yarn/bin/"
-      - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/mysql/bin/"
       - "/usr/local/bin/"
       - "/System/Cryptexes/App/usr/bin/"
       - "/usr/bin/"
@@ -1332,24 +1101,20 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
-      - "/usr/local/go/bin/"
-      - "/usr/local/mysql/bin/"
-      - "/Users/cryptogirl/anaconda3/bin/"
-      - "/Users/cryptogirl/anaconda3/condabin/"
-      - "/Users/cryptogirl/.cargo/bin/"
-      - "/Users/cryptogirl/.foundry/bin/"
+      - "/Users/zsofietubel/.cargo/bin/"
+      - "/Users/zsofietubel/.foundry/bin/"
     searched_directories:
-      - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin/install_name_tool"
-      - "/Users/cryptogirl/.yarn/bin/install_name_tool"
-      - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin/install_name_tool"
+      - "/opt/homebrew/bin/install_name_tool"
+      - "/opt/homebrew/sbin/install_name_tool"
+      - "/usr/local/mysql/bin/install_name_tool"
       - "/usr/local/bin/install_name_tool"
       - "/System/Cryptexes/App/usr/bin/install_name_tool"
     found: "/usr/bin/install_name_tool"
     search_context:
       ENV{PATH}:
-        - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin"
-        - "/Users/cryptogirl/.yarn/bin"
-        - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/mysql/bin"
         - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
         - "/usr/bin"
@@ -1359,29 +1124,20 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/usr/local/go/bin"
-        - "/usr/local/mysql/bin"
-        - "/Users/cryptogirl/anaconda3/bin"
-        - "/Users/cryptogirl/anaconda3/condabin"
-        - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin"
-        - "/Users/cryptogirl/.yarn/bin"
-        - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin"
-        - "/Users/cryptogirl/.cargo/bin"
-        - "/Users/cryptogirl/.foundry/bin"
-        - "/Users/cryptogirl/.foundry/bin"
-        - "/Users/cryptogirl/.foundry/bin"
+        - "/Users/zsofietubel/.cargo/bin"
+        - "/Users/zsofietubel/.foundry/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
   -
     kind: "try_compile-v1"
     backtrace:
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
-      - "/usr/local/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles/CMakeScratch/TryCompile-uAW45s"
-      binary: "/Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles/CMakeScratch/TryCompile-uAW45s"
+      source: "/Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles/CMakeScratch/TryCompile-XKDjO2"
+      binary: "/Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles/CMakeScratch/TryCompile-XKDjO2"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -1393,151 +1149,149 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles/CMakeScratch/TryCompile-uAW45s'
+        Change Dir: '/Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles/CMakeScratch/TryCompile-XKDjO2'
         
-        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a8766/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_a8766.dir/build.make CMakeFiles/cmTC_a8766.dir/build
-        Building C object CMakeFiles/cmTC_a8766.dir/CMakeCCompilerABI.c.o
-        /usr/bin/cc   -v -Wl,-v -MD -MT CMakeFiles/cmTC_a8766.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_a8766.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_a8766.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake/Modules/CMakeCCompilerABI.c
-        Apple clang version 16.0.0 (clang-1600.0.26.6)
-        Target: x86_64-apple-darwin23.6.0
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_708ab/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_708ab.dir/build.make CMakeFiles/cmTC_708ab.dir/build
+        Building C object CMakeFiles/cmTC_708ab.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -arch arm64   -v -Wl,-v -MD -MT CMakeFiles/cmTC_708ab.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_708ab.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_708ab.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
+        Apple clang version 15.0.0 (clang-1500.3.9.4)
+        Target: arm64-apple-darwin23.4.0
         Thread model: posix
         InstalledDir: /Library/Developer/CommandLineTools/usr/bin
         clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
-         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple x86_64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=all -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=2 -target-sdk-version=15.2 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu penryn -tune-cpu generic -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -fcoverage-compilation-dir=/Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles/CMakeScratch/TryCompile-uAW45s -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/16 -dependency-file CMakeFiles/cmTC_a8766.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_a8766.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/16/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdebug-compilation-dir=/Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles/CMakeScratch/TryCompile-uAW45s -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_a8766.dir/CMakeCCompilerABI.c.o -x c /usr/local/share/cmake/Modules/CMakeCCompilerABI.c
-        clang -cc1 version 16.0.0 (clang-1600.0.26.6) default target x86_64-apple-darwin23.6.0
+         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.4 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1053.12 -v -fcoverage-compilation-dir=/Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles/CMakeScratch/TryCompile-XKDjO2 -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_708ab.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_708ab.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdebug-compilation-dir=/Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles/CMakeScratch/TryCompile-XKDjO2 -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_708ab.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 15.0.0 (clang-1500.3.9.4) default target arm64-apple-darwin23.4.0
         ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"
         ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
         #include "..." search starts here:
         #include <...> search starts here:
          /usr/local/include
-         /Library/Developer/CommandLineTools/usr/lib/clang/16/include
+         /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include
          /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include
          /Library/Developer/CommandLineTools/usr/include
          /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
         End of search list.
-        Linking C executable cmTC_a8766
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a8766.dir/link.txt --verbose=1
-        Apple clang version 16.0.0 (clang-1600.0.26.6)
-        Target: x86_64-apple-darwin23.6.0
+        Linking C executable cmTC_708ab
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_708ab.dir/link.txt --verbose=1
+        Apple clang version 15.0.0 (clang-1500.3.9.4)
+        Target: arm64-apple-darwin23.4.0
         Thread model: posix
         InstalledDir: /Library/Developer/CommandLineTools/usr/bin
-         "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch x86_64 -platform_version macos 14.0.0 15.2 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_a8766 -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_a8766.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a
-        @(#)PROGRAM:ld PROJECT:ld-1115.7.3
-        BUILD 23:50:35 Dec  5 2024
+         "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 14.4 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -o cmTC_708ab -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_708ab.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a
+        @(#)PROGRAM:ld PROJECT:ld-1053.12
+        BUILD 15:45:29 Feb  3 2024
         configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
-        will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em
-        LTO support using: LLVM version 16.0.0 (static support for 29, runtime is 29)
-        TAPI support using: Apple TAPI version 16.0.0 (tapi-1600.0.11.9)
+        will use ld-classic for: armv6 armv7 armv7s arm64_32 i386 armv6m armv7k armv7m armv7em
+        LTO support using: LLVM version 15.0.0 (static support for 29, runtime is 29)
+        TAPI support using: Apple TAPI version 15.0.0 (tapi-1500.3.2.2)
         Library search paths:
         	/usr/local/lib
         	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib
         	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/swift
         Framework search paths:
         	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks
-        /usr/bin/cc -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_a8766.dir/CMakeCCompilerABI.c.o -o cmTC_a8766
+        /usr/bin/cc  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_708ab.dir/CMakeCCompilerABI.c.o -o cmTC_708ab
         
       exitCode: 0
   -
     kind: "message-v1"
     backtrace:
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:122 (message)"
-      - "/usr/local/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:122 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Effective list of requested architectures (possibly empty)  : ""
-      Effective list of architectures found in the ABI info binary: "x86_64"
+      Effective list of architectures found in the ABI info binary: "arm64"
   -
     kind: "message-v1"
     backtrace:
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
-      - "/usr/local/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Parsed C implicit include dir info: rv=done
         found start of include info
         found start of implicit include info
           add: [/usr/local/include]
-          add: [/Library/Developer/CommandLineTools/usr/lib/clang/16/include]
+          add: [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include]
           add: [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include]
           add: [/Library/Developer/CommandLineTools/usr/include]
         end of search list found
         collapse include dir [/usr/local/include] ==> [/usr/local/include]
-        collapse include dir [/Library/Developer/CommandLineTools/usr/lib/clang/16/include] ==> [/Library/Developer/CommandLineTools/usr/lib/clang/16/include]
+        collapse include dir [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include] ==> [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include]
         collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include]
         collapse include dir [/Library/Developer/CommandLineTools/usr/include] ==> [/Library/Developer/CommandLineTools/usr/include]
-        implicit include dirs: [/usr/local/include;/Library/Developer/CommandLineTools/usr/lib/clang/16/include;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include;/Library/Developer/CommandLineTools/usr/include]
+        implicit include dirs: [/usr/local/include;/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include;/Library/Developer/CommandLineTools/usr/include]
       
       
   -
     kind: "message-v1"
     backtrace:
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
-      - "/usr/local/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles/CMakeScratch/TryCompile-uAW45s']
+        ignore line: [Change Dir: '/Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles/CMakeScratch/TryCompile-XKDjO2']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a8766/fast]
-        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_a8766.dir/build.make CMakeFiles/cmTC_a8766.dir/build]
-        ignore line: [Building C object CMakeFiles/cmTC_a8766.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/usr/bin/cc   -v -Wl -v -MD -MT CMakeFiles/cmTC_a8766.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_a8766.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_a8766.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake/Modules/CMakeCCompilerABI.c]
-        ignore line: [Apple clang version 16.0.0 (clang-1600.0.26.6)]
-        ignore line: [Target: x86_64-apple-darwin23.6.0]
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_708ab/fast]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_708ab.dir/build.make CMakeFiles/cmTC_708ab.dir/build]
+        ignore line: [Building C object CMakeFiles/cmTC_708ab.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -arch arm64   -v -Wl -v -MD -MT CMakeFiles/cmTC_708ab.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_708ab.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_708ab.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Apple clang version 15.0.0 (clang-1500.3.9.4)]
+        ignore line: [Target: arm64-apple-darwin23.4.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
         ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
-        ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple x86_64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=all -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=2 -target-sdk-version=15.2 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu penryn -tune-cpu generic -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -fcoverage-compilation-dir=/Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles/CMakeScratch/TryCompile-uAW45s -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/16 -dependency-file CMakeFiles/cmTC_a8766.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_a8766.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/16/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdebug-compilation-dir=/Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles/CMakeScratch/TryCompile-uAW45s -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_a8766.dir/CMakeCCompilerABI.c.o -x c /usr/local/share/cmake/Modules/CMakeCCompilerABI.c]
-        ignore line: [clang -cc1 version 16.0.0 (clang-1600.0.26.6) default target x86_64-apple-darwin23.6.0]
+        ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.4 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1053.12 -v -fcoverage-compilation-dir=/Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles/CMakeScratch/TryCompile-XKDjO2 -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_708ab.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_708ab.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdebug-compilation-dir=/Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles/CMakeScratch/TryCompile-XKDjO2 -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_708ab.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 15.0.0 (clang-1500.3.9.4) default target arm64-apple-darwin23.4.0]
         ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"]
         ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"]
         ignore line: [#include "..." search starts here:]
         ignore line: [#include <...> search starts here:]
         ignore line: [ /usr/local/include]
-        ignore line: [ /Library/Developer/CommandLineTools/usr/lib/clang/16/include]
+        ignore line: [ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include]
         ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include]
         ignore line: [ /Library/Developer/CommandLineTools/usr/include]
         ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)]
         ignore line: [End of search list.]
-        ignore line: [Linking C executable cmTC_a8766]
-        ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a8766.dir/link.txt --verbose=1]
-        ignore line: [Apple clang version 16.0.0 (clang-1600.0.26.6)]
-        ignore line: [Target: x86_64-apple-darwin23.6.0]
+        ignore line: [Linking C executable cmTC_708ab]
+        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_708ab.dir/link.txt --verbose=1]
+        ignore line: [Apple clang version 15.0.0 (clang-1500.3.9.4)]
+        ignore line: [Target: arm64-apple-darwin23.4.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
-        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch x86_64 -platform_version macos 14.0.0 15.2 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_a8766 -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_a8766.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 14.4 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -o cmTC_708ab -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_708ab.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a]
           arg [/Library/Developer/CommandLineTools/usr/bin/ld] ==> ignore
           arg [-demangle] ==> ignore
           arg [-lto_library] ==> ignore, skip following value
           arg [/Library/Developer/CommandLineTools/usr/lib/libLTO.dylib] ==> skip value of -lto_library
           arg [-dynamic] ==> ignore
           arg [-arch] ==> ignore
-          arg [x86_64] ==> ignore
+          arg [arm64] ==> ignore
           arg [-platform_version] ==> ignore
           arg [macos] ==> ignore
           arg [14.0.0] ==> ignore
-          arg [15.2] ==> ignore
+          arg [14.4] ==> ignore
           arg [-syslibroot] ==> ignore
           arg [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk] ==> ignore
-          arg [-mllvm] ==> ignore
-          arg [-enable-linkonceodr-outlining] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_a8766] ==> ignore
+          arg [cmTC_708ab] ==> ignore
           arg [-L/usr/local/lib] ==> dir [/usr/local/lib]
           arg [-search_paths_first] ==> ignore
           arg [-headerpad_max_install_names] ==> ignore
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_a8766.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_708ab.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lSystem] ==> lib [System]
-          arg [/Library/Developer/CommandLineTools/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+          arg [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a]
         linker tool for 'C': /Library/Developer/CommandLineTools/usr/bin/ld
         Library search paths: [;/usr/local/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/swift]
         Framework search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks]
         remove lib [System]
-        remove lib [/Library/Developer/CommandLineTools/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+        remove lib [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a]
         collapse library dir [/usr/local/lib] ==> [/usr/local/lib]
         collapse library dir [/usr/local/lib] ==> [/usr/local/lib]
         collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib]
@@ -1552,29 +1306,29 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "/usr/local/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
-      - "/usr/local/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/opt/homebrew/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Running the C compiler's linker: "/Library/Developer/CommandLineTools/usr/bin/ld" "-v"
-      @(#)PROGRAM:ld PROJECT:ld-1115.7.3
-      BUILD 23:50:35 Dec  5 2024
+      @(#)PROGRAM:ld PROJECT:ld-1053.12
+      BUILD 15:45:29 Feb  3 2024
       configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
-      will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em
-      LTO support using: LLVM version 16.0.0 (static support for 29, runtime is 29)
-      TAPI support using: Apple TAPI version 16.0.0 (tapi-1600.0.11.9)
+      will use ld-classic for: armv6 armv7 armv7s arm64_32 i386 armv6m armv7k armv7m armv7em
+      LTO support using: LLVM version 15.0.0 (static support for 29, runtime is 29)
+      TAPI support using: Apple TAPI version 15.0.0 (tapi-1500.3.2.2)
   -
     kind: "try_compile-v1"
     backtrace:
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
-      - "/usr/local/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles/CMakeScratch/TryCompile-bOxJ6d"
-      binary: "/Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles/CMakeScratch/TryCompile-bOxJ6d"
+      source: "/Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles/CMakeScratch/TryCompile-HIJc9H"
+      binary: "/Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles/CMakeScratch/TryCompile-HIJc9H"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1587,67 +1341,66 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles/CMakeScratch/TryCompile-bOxJ6d'
+        Change Dir: '/Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles/CMakeScratch/TryCompile-HIJc9H'
         
-        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_3489d/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_3489d.dir/build.make CMakeFiles/cmTC_3489d.dir/build
-        Building CXX object CMakeFiles/cmTC_3489d.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -v -Wl,-v -MD -MT CMakeFiles/cmTC_3489d.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_3489d.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_3489d.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake/Modules/CMakeCXXCompilerABI.cpp
-        Apple clang version 16.0.0 (clang-1600.0.26.6)
-        Target: x86_64-apple-darwin23.6.0
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a018a/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_a018a.dir/build.make CMakeFiles/cmTC_a018a.dir/build
+        Building CXX object CMakeFiles/cmTC_a018a.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -arch arm64   -v -Wl,-v -MD -MT CMakeFiles/cmTC_a018a.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_a018a.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_a018a.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Apple clang version 15.0.0 (clang-1500.3.9.4)
+        Target: arm64-apple-darwin23.4.0
         Thread model: posix
         InstalledDir: /Library/Developer/CommandLineTools/usr/bin
-        clang++: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"
-         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple x86_64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=all -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=2 -target-sdk-version=15.2 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu penryn -tune-cpu generic -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -fcoverage-compilation-dir=/Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles/CMakeScratch/TryCompile-bOxJ6d -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/16 -dependency-file CMakeFiles/cmTC_3489d.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_3489d.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/16/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles/CMakeScratch/TryCompile-bOxJ6d -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_3489d.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/local/share/cmake/Modules/CMakeCXXCompilerABI.cpp
-        clang -cc1 version 16.0.0 (clang-1600.0.26.6) default target x86_64-apple-darwin23.6.0
+        clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.4 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1053.12 -v -fcoverage-compilation-dir=/Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles/CMakeScratch/TryCompile-HIJc9H -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_a018a.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_a018a.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles/CMakeScratch/TryCompile-HIJc9H -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_a018a.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 15.0.0 (clang-1500.3.9.4) default target arm64-apple-darwin23.4.0
         ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"
         ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
         #include "..." search starts here:
         #include <...> search starts here:
          /usr/local/include
          /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1
-         /Library/Developer/CommandLineTools/usr/lib/clang/16/include
+         /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include
          /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include
          /Library/Developer/CommandLineTools/usr/include
          /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
         End of search list.
-        Linking CXX executable cmTC_3489d
-        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3489d.dir/link.txt --verbose=1
-        Apple clang version 16.0.0 (clang-1600.0.26.6)
-        Target: x86_64-apple-darwin23.6.0
+        Linking CXX executable cmTC_a018a
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a018a.dir/link.txt --verbose=1
+        Apple clang version 15.0.0 (clang-1500.3.9.4)
+        Target: arm64-apple-darwin23.4.0
         Thread model: posix
         InstalledDir: /Library/Developer/CommandLineTools/usr/bin
-         "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch x86_64 -platform_version macos 14.0.0 15.2 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_3489d -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_3489d.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a
-        @(#)PROGRAM:ld PROJECT:ld-1115.7.3
-        BUILD 23:50:35 Dec  5 2024
+         "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 14.4 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -o cmTC_a018a -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_a018a.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a
+        @(#)PROGRAM:ld PROJECT:ld-1053.12
+        BUILD 15:45:29 Feb  3 2024
         configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
-        will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em
-        LTO support using: LLVM version 16.0.0 (static support for 29, runtime is 29)
-        TAPI support using: Apple TAPI version 16.0.0 (tapi-1600.0.11.9)
+        will use ld-classic for: armv6 armv7 armv7s arm64_32 i386 armv6m armv7k armv7m armv7em
+        LTO support using: LLVM version 15.0.0 (static support for 29, runtime is 29)
+        TAPI support using: Apple TAPI version 15.0.0 (tapi-1500.3.2.2)
         Library search paths:
         	/usr/local/lib
         	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib
         	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/swift
         Framework search paths:
         	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks
-        /usr/bin/c++ -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_3489d.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_3489d
+        /usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_a018a.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_a018a
         
       exitCode: 0
   -
     kind: "message-v1"
     backtrace:
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:122 (message)"
-      - "/usr/local/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:122 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Effective list of requested architectures (possibly empty)  : ""
-      Effective list of architectures found in the ABI info binary: "x86_64"
+      Effective list of architectures found in the ABI info binary: "arm64"
   -
     kind: "message-v1"
     backtrace:
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
-      - "/usr/local/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Parsed CXX implicit include dir info: rv=done
@@ -1655,90 +1408,87 @@ events:
         found start of implicit include info
           add: [/usr/local/include]
           add: [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1]
-          add: [/Library/Developer/CommandLineTools/usr/lib/clang/16/include]
+          add: [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include]
           add: [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include]
           add: [/Library/Developer/CommandLineTools/usr/include]
         end of search list found
         collapse include dir [/usr/local/include] ==> [/usr/local/include]
         collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1]
-        collapse include dir [/Library/Developer/CommandLineTools/usr/lib/clang/16/include] ==> [/Library/Developer/CommandLineTools/usr/lib/clang/16/include]
+        collapse include dir [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include] ==> [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include]
         collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include]
         collapse include dir [/Library/Developer/CommandLineTools/usr/include] ==> [/Library/Developer/CommandLineTools/usr/include]
-        implicit include dirs: [/usr/local/include;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1;/Library/Developer/CommandLineTools/usr/lib/clang/16/include;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include;/Library/Developer/CommandLineTools/usr/include]
+        implicit include dirs: [/usr/local/include;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1;/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include;/Library/Developer/CommandLineTools/usr/include]
       
       
   -
     kind: "message-v1"
     backtrace:
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
-      - "/usr/local/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles/CMakeScratch/TryCompile-bOxJ6d']
+        ignore line: [Change Dir: '/Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles/CMakeScratch/TryCompile-HIJc9H']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_3489d/fast]
-        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_3489d.dir/build.make CMakeFiles/cmTC_3489d.dir/build]
-        ignore line: [Building CXX object CMakeFiles/cmTC_3489d.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -v -Wl -v -MD -MT CMakeFiles/cmTC_3489d.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_3489d.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_3489d.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
-        ignore line: [Apple clang version 16.0.0 (clang-1600.0.26.6)]
-        ignore line: [Target: x86_64-apple-darwin23.6.0]
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a018a/fast]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_a018a.dir/build.make CMakeFiles/cmTC_a018a.dir/build]
+        ignore line: [Building CXX object CMakeFiles/cmTC_a018a.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -arch arm64   -v -Wl -v -MD -MT CMakeFiles/cmTC_a018a.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_a018a.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_a018a.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Apple clang version 15.0.0 (clang-1500.3.9.4)]
+        ignore line: [Target: arm64-apple-darwin23.4.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
-        ignore line: [clang++: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
-        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"]
-        ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple x86_64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=all -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=2 -target-sdk-version=15.2 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu penryn -tune-cpu generic -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -fcoverage-compilation-dir=/Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles/CMakeScratch/TryCompile-bOxJ6d -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/16 -dependency-file CMakeFiles/cmTC_3489d.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_3489d.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/16/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles/CMakeScratch/TryCompile-bOxJ6d -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_3489d.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/local/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
-        ignore line: [clang -cc1 version 16.0.0 (clang-1600.0.26.6) default target x86_64-apple-darwin23.6.0]
+        ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+        ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.4 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1053.12 -v -fcoverage-compilation-dir=/Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles/CMakeScratch/TryCompile-HIJc9H -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_a018a.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_a018a.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles/CMakeScratch/TryCompile-HIJc9H -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_a018a.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 15.0.0 (clang-1500.3.9.4) default target arm64-apple-darwin23.4.0]
         ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"]
         ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"]
         ignore line: [#include "..." search starts here:]
         ignore line: [#include <...> search starts here:]
         ignore line: [ /usr/local/include]
         ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1]
-        ignore line: [ /Library/Developer/CommandLineTools/usr/lib/clang/16/include]
+        ignore line: [ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include]
         ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include]
         ignore line: [ /Library/Developer/CommandLineTools/usr/include]
         ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)]
         ignore line: [End of search list.]
-        ignore line: [Linking CXX executable cmTC_3489d]
-        ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3489d.dir/link.txt --verbose=1]
-        ignore line: [Apple clang version 16.0.0 (clang-1600.0.26.6)]
-        ignore line: [Target: x86_64-apple-darwin23.6.0]
+        ignore line: [Linking CXX executable cmTC_a018a]
+        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a018a.dir/link.txt --verbose=1]
+        ignore line: [Apple clang version 15.0.0 (clang-1500.3.9.4)]
+        ignore line: [Target: arm64-apple-darwin23.4.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
-        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch x86_64 -platform_version macos 14.0.0 15.2 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_3489d -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_3489d.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 14.4 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -o cmTC_a018a -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_a018a.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a]
           arg [/Library/Developer/CommandLineTools/usr/bin/ld] ==> ignore
           arg [-demangle] ==> ignore
           arg [-lto_library] ==> ignore, skip following value
           arg [/Library/Developer/CommandLineTools/usr/lib/libLTO.dylib] ==> skip value of -lto_library
           arg [-dynamic] ==> ignore
           arg [-arch] ==> ignore
-          arg [x86_64] ==> ignore
+          arg [arm64] ==> ignore
           arg [-platform_version] ==> ignore
           arg [macos] ==> ignore
           arg [14.0.0] ==> ignore
-          arg [15.2] ==> ignore
+          arg [14.4] ==> ignore
           arg [-syslibroot] ==> ignore
           arg [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk] ==> ignore
-          arg [-mllvm] ==> ignore
-          arg [-enable-linkonceodr-outlining] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_3489d] ==> ignore
+          arg [cmTC_a018a] ==> ignore
           arg [-L/usr/local/lib] ==> dir [/usr/local/lib]
           arg [-search_paths_first] ==> ignore
           arg [-headerpad_max_install_names] ==> ignore
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_3489d.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_a018a.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lc++] ==> lib [c++]
           arg [-lSystem] ==> lib [System]
-          arg [/Library/Developer/CommandLineTools/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+          arg [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a]
         linker tool for 'CXX': /Library/Developer/CommandLineTools/usr/bin/ld
         Library search paths: [;/usr/local/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/swift]
         Framework search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks]
         remove lib [System]
-        remove lib [/Library/Developer/CommandLineTools/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+        remove lib [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a]
         collapse library dir [/usr/local/lib] ==> [/usr/local/lib]
         collapse library dir [/usr/local/lib] ==> [/usr/local/lib]
         collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib]
@@ -1753,22 +1503,22 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "/usr/local/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
-      - "/usr/local/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
-      - "/usr/local/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/opt/homebrew/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Running the CXX compiler's linker: "/Library/Developer/CommandLineTools/usr/bin/ld" "-v"
-      @(#)PROGRAM:ld PROJECT:ld-1115.7.3
-      BUILD 23:50:35 Dec  5 2024
+      @(#)PROGRAM:ld PROJECT:ld-1053.12
+      BUILD 15:45:29 Feb  3 2024
       configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
-      will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em
-      LTO support using: LLVM version 16.0.0 (static support for 29, runtime is 29)
-      TAPI support using: Apple TAPI version 16.0.0 (tapi-1600.0.11.9)
+      will use ld-classic for: armv6 armv7 armv7s arm64_32 i386 armv6m armv7k armv7m armv7em
+      LTO support using: LLVM version 15.0.0 (static support for 29, runtime is 29)
+      TAPI support using: Apple TAPI version 15.0.0 (tapi-1500.3.2.2)
   -
     kind: "find-v1"
     backtrace:
-      - "/usr/local/lib/cmake/SFML/SFMLConfig.cmake:91 (find_path)"
+      - "/opt/homebrew/lib/cmake/SFML/SFMLConfig.cmake:91 (find_path)"
       - "CMakeLists.txt:23 (find_package)"
     mode: "path"
     variable: "SFML_DOC_DIR"
@@ -1784,15 +1534,15 @@ events:
     names:
       - "SFML.tag"
     candidate_directories:
-      - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin/SFML/doc/"
-      - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin/share/doc/SFML/"
-      - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin/"
-      - "/Users/cryptogirl/.yarn/bin/SFML/doc/"
-      - "/Users/cryptogirl/.yarn/bin/share/doc/SFML/"
-      - "/Users/cryptogirl/.yarn/bin/"
-      - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin/SFML/doc/"
-      - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin/share/doc/SFML/"
-      - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin/"
+      - "/opt/homebrew/bin/SFML/doc/"
+      - "/opt/homebrew/bin/share/doc/SFML/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/SFML/doc/"
+      - "/opt/homebrew/sbin/share/doc/SFML/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/mysql/bin/SFML/doc/"
+      - "/usr/local/mysql/bin/share/doc/SFML/"
+      - "/usr/local/mysql/bin/"
       - "/usr/local/bin/SFML/doc/"
       - "/usr/local/bin/share/doc/SFML/"
       - "/usr/local/bin/"
@@ -1820,30 +1570,24 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/SFML/doc/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/share/doc/SFML/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
-      - "/usr/local/go/bin/SFML/doc/"
-      - "/usr/local/go/bin/share/doc/SFML/"
-      - "/usr/local/go/bin/"
-      - "/usr/local/mysql/bin/SFML/doc/"
-      - "/usr/local/mysql/bin/share/doc/SFML/"
-      - "/usr/local/mysql/bin/"
-      - "/Users/cryptogirl/anaconda3/bin/SFML/doc/"
-      - "/Users/cryptogirl/anaconda3/bin/share/doc/SFML/"
-      - "/Users/cryptogirl/anaconda3/bin/"
-      - "/Users/cryptogirl/anaconda3/condabin/SFML/doc/"
-      - "/Users/cryptogirl/anaconda3/condabin/share/doc/SFML/"
-      - "/Users/cryptogirl/anaconda3/condabin/"
-      - "/Users/cryptogirl/.cargo/bin/SFML/doc/"
-      - "/Users/cryptogirl/.cargo/bin/share/doc/SFML/"
-      - "/Users/cryptogirl/.cargo/bin/"
-      - "/Users/cryptogirl/.foundry/bin/SFML/doc/"
-      - "/Users/cryptogirl/.foundry/bin/share/doc/SFML/"
-      - "/Users/cryptogirl/.foundry/bin/"
+      - "/Users/zsofietubel/.cargo/bin/SFML/doc/"
+      - "/Users/zsofietubel/.cargo/bin/share/doc/SFML/"
+      - "/Users/zsofietubel/.cargo/bin/"
+      - "/Users/zsofietubel/.foundry/bin/SFML/doc/"
+      - "/Users/zsofietubel/.foundry/bin/share/doc/SFML/"
+      - "/Users/zsofietubel/.foundry/bin/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/SFML/doc/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/share/doc/SFML/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/SFML/doc/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/share/doc/SFML/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
+      - "/opt/homebrew/include/SFML/doc/"
+      - "/opt/homebrew/include/share/doc/SFML/"
+      - "/opt/homebrew/include/"
+      - "/opt/homebrew/SFML/doc/"
+      - "/opt/homebrew/share/doc/SFML/"
+      - "/opt/homebrew/"
       - "/usr/local/include/SFML/doc/"
       - "/usr/local/include/share/doc/SFML/"
       - "/usr/local/include/"
@@ -1892,9 +1636,9 @@ events:
       - "/usr/include/X11/SFML/doc/"
       - "/usr/include/X11/share/doc/SFML/"
       - "/usr/include/X11/"
-      - "/Users/cryptogirl/Library/Frameworks/SFML/doc/"
-      - "/Users/cryptogirl/Library/Frameworks/share/doc/SFML/"
-      - "/Users/cryptogirl/Library/Frameworks/"
+      - "/Users/zsofietubel/Library/Frameworks/SFML/doc/"
+      - "/Users/zsofietubel/Library/Frameworks/share/doc/SFML/"
+      - "/Users/zsofietubel/Library/Frameworks/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks/SFML/doc/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks/share/doc/SFML/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks/"
@@ -1916,6 +1660,9 @@ events:
       - "/System/Library/Frameworks/SFML/doc/"
       - "/System/Library/Frameworks/share/doc/SFML/"
       - "/System/Library/Frameworks/"
+      - "/opt/homebrew/SFML/doc/"
+      - "/opt/homebrew/share/doc/SFML/"
+      - "/opt/homebrew/"
       - "/usr/local/SFML/doc/"
       - "/usr/local/share/doc/SFML/"
       - "/usr/local/"
@@ -1935,15 +1682,15 @@ events:
       - "/opt/share/doc/SFML/"
       - "/opt/"
     searched_directories:
-      - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin/SFML/doc/SFML.tag"
-      - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin/share/doc/SFML/SFML.tag"
-      - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin/SFML.tag"
-      - "/Users/cryptogirl/.yarn/bin/SFML/doc/SFML.tag"
-      - "/Users/cryptogirl/.yarn/bin/share/doc/SFML/SFML.tag"
-      - "/Users/cryptogirl/.yarn/bin/SFML.tag"
-      - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin/SFML/doc/SFML.tag"
-      - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin/share/doc/SFML/SFML.tag"
-      - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin/SFML.tag"
+      - "/opt/homebrew/bin/SFML/doc/SFML.tag"
+      - "/opt/homebrew/bin/share/doc/SFML/SFML.tag"
+      - "/opt/homebrew/bin/SFML.tag"
+      - "/opt/homebrew/sbin/SFML/doc/SFML.tag"
+      - "/opt/homebrew/sbin/share/doc/SFML/SFML.tag"
+      - "/opt/homebrew/sbin/SFML.tag"
+      - "/usr/local/mysql/bin/SFML/doc/SFML.tag"
+      - "/usr/local/mysql/bin/share/doc/SFML/SFML.tag"
+      - "/usr/local/mysql/bin/SFML.tag"
       - "/usr/local/bin/SFML/doc/SFML.tag"
       - "/usr/local/bin/share/doc/SFML/SFML.tag"
       - "/usr/local/bin/SFML.tag"
@@ -1971,40 +1718,28 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/SFML/doc/SFML.tag"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/share/doc/SFML/SFML.tag"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/SFML.tag"
-      - "/usr/local/go/bin/SFML/doc/SFML.tag"
-      - "/usr/local/go/bin/share/doc/SFML/SFML.tag"
-      - "/usr/local/go/bin/SFML.tag"
-      - "/usr/local/mysql/bin/SFML/doc/SFML.tag"
-      - "/usr/local/mysql/bin/share/doc/SFML/SFML.tag"
-      - "/usr/local/mysql/bin/SFML.tag"
-      - "/Users/cryptogirl/anaconda3/bin/SFML/doc/SFML.tag"
-      - "/Users/cryptogirl/anaconda3/bin/share/doc/SFML/SFML.tag"
-      - "/Users/cryptogirl/anaconda3/bin/SFML.tag"
-      - "/Users/cryptogirl/anaconda3/condabin/SFML/doc/SFML.tag"
-      - "/Users/cryptogirl/anaconda3/condabin/share/doc/SFML/SFML.tag"
-      - "/Users/cryptogirl/anaconda3/condabin/SFML.tag"
-      - "/Users/cryptogirl/.cargo/bin/SFML/doc/SFML.tag"
-      - "/Users/cryptogirl/.cargo/bin/share/doc/SFML/SFML.tag"
-      - "/Users/cryptogirl/.cargo/bin/SFML.tag"
-      - "/Users/cryptogirl/.foundry/bin/SFML/doc/SFML.tag"
-      - "/Users/cryptogirl/.foundry/bin/share/doc/SFML/SFML.tag"
-      - "/Users/cryptogirl/.foundry/bin/SFML.tag"
+      - "/Users/zsofietubel/.cargo/bin/SFML/doc/SFML.tag"
+      - "/Users/zsofietubel/.cargo/bin/share/doc/SFML/SFML.tag"
+      - "/Users/zsofietubel/.cargo/bin/SFML.tag"
+      - "/Users/zsofietubel/.foundry/bin/SFML/doc/SFML.tag"
+      - "/Users/zsofietubel/.foundry/bin/share/doc/SFML/SFML.tag"
+      - "/Users/zsofietubel/.foundry/bin/SFML.tag"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/SFML/doc/SFML.tag"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/share/doc/SFML/SFML.tag"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/SFML.tag"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/SFML/doc/SFML.tag"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/share/doc/SFML/SFML.tag"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/SFML.tag"
-      - "/usr/local/include/SFML/doc/SFML.tag"
-      - "/usr/local/include/share/doc/SFML/SFML.tag"
-      - "/usr/local/include/SFML.tag"
-      - "/usr/local/SFML/doc/SFML.tag"
-    found: "/usr/local/share/doc/SFML/"
+      - "/opt/homebrew/include/SFML/doc/SFML.tag"
+      - "/opt/homebrew/include/share/doc/SFML/SFML.tag"
+      - "/opt/homebrew/include/SFML.tag"
+      - "/opt/homebrew/SFML/doc/SFML.tag"
+    found: "/opt/homebrew/share/doc/SFML/"
     search_context:
       ENV{PATH}:
-        - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin"
-        - "/Users/cryptogirl/.yarn/bin"
-        - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/mysql/bin"
         - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
         - "/usr/bin"
@@ -2014,25 +1749,16 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/usr/local/go/bin"
-        - "/usr/local/mysql/bin"
-        - "/Users/cryptogirl/anaconda3/bin"
-        - "/Users/cryptogirl/anaconda3/condabin"
-        - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin"
-        - "/Users/cryptogirl/.yarn/bin"
-        - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin"
-        - "/Users/cryptogirl/.cargo/bin"
-        - "/Users/cryptogirl/.foundry/bin"
-        - "/Users/cryptogirl/.foundry/bin"
-        - "/Users/cryptogirl/.foundry/bin"
+        - "/Users/zsofietubel/.cargo/bin"
+        - "/Users/zsofietubel/.foundry/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
-        - "/usr/local"
+        - "/opt/homebrew"
         - "/usr/local"
         - "/usr"
         - "/"
-        - "/usr/local"
+        - "/opt/homebrew"
         - "/usr/local"
         - "/usr/X11R6"
         - "/usr/pkg"
@@ -2102,46 +1828,30 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
-        path: "/Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles/pkgRedirects/SFMLConfig.cmake"
+        path: "/Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles/pkgRedirects/SFMLConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/Users/cryptogirl/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles/pkgRedirects/sfml-config.cmake"
+        path: "/Users/zsofietubel/Desktop/Multiplayer-Game-Engine-Demo/build/CMakeFiles/pkgRedirects/sfml-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/Users/cryptogirl/.nvm/versions/node/v16.20.0/SFMLConfig.cmake"
+        path: "/opt/homebrew/SFMLConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/Users/cryptogirl/.nvm/versions/node/v16.20.0/sfml-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/Users/cryptogirl/.yarn/SFMLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/Users/cryptogirl/.yarn/sfml-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/local/SFMLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/local/sfml-config.cmake"
+        path: "/opt/homebrew/sfml-config.cmake"
         mode: "config"
         reason: "no_exist"
     found:
-      path: "/usr/local/lib/cmake/SFML/SFMLConfig.cmake"
+      path: "/opt/homebrew/lib/cmake/SFML/SFMLConfig.cmake"
       mode: "config"
       version: "3.0.1"
     search_context:
       ENV{PATH}:
-        - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin"
-        - "/Users/cryptogirl/.yarn/bin"
-        - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/mysql/bin"
         - "/usr/local/bin"
         - "/System/Cryptexes/App/usr/bin"
         - "/usr/bin"
@@ -2151,25 +1861,16 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/usr/local/go/bin"
-        - "/usr/local/mysql/bin"
-        - "/Users/cryptogirl/anaconda3/bin"
-        - "/Users/cryptogirl/anaconda3/condabin"
-        - "/Users/cryptogirl/.nvm/versions/node/v16.20.0/bin"
-        - "/Users/cryptogirl/.yarn/bin"
-        - "/Users/cryptogirl/.config/yarn/global/node_modules/.bin"
-        - "/Users/cryptogirl/.cargo/bin"
-        - "/Users/cryptogirl/.foundry/bin"
-        - "/Users/cryptogirl/.foundry/bin"
-        - "/Users/cryptogirl/.foundry/bin"
+        - "/Users/zsofietubel/.cargo/bin"
+        - "/Users/zsofietubel/.foundry/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
-        - "/usr/local"
+        - "/opt/homebrew"
         - "/usr/local"
         - "/usr"
         - "/"
-        - "/usr/local"
+        - "/opt/homebrew"
         - "/usr/local"
         - "/usr/X11R6"
         - "/usr/pkg"

@@ -6,7 +6,9 @@
 #include <memory>
 
 // Constructor with member initializer list
-Game::Game() { std::cout << "Game constructor called!" << std::endl; }
+Game::Game() : raccoon("../assets/raccoon.png", 0, 0) { 
+  std::cout << "Game constructor called!" << std::endl; 
+}
 
 void Game::start(sf::RenderWindow &window) {
   isRunning = true;
@@ -70,6 +72,13 @@ void Game::start(sf::RenderWindow &window) {
   obstacles.emplace_back("../assets/Alien2.png", 650, 600, 500, 600);
   obstacles.emplace_back("../assets/Alien1.png", 350, 600, 400, 600);
   obstacles.emplace_back("../assets/Alien2.png", 143, 600, 300, 600);
+
+  // Create raccoons
+  raccoons.reserve(5);
+  raccoons.emplace_back("../assets/raccoon.png", 600, 650);
+  raccoons.emplace_back("../assets/raccoon.png", 400, 635);
+  raccoons.emplace_back("../assets/raccoon.png", 220, 660);
+  raccoons.emplace_back("../assets/raccoon.png", 700, 630);
 }
 
 void Game::update() {
@@ -97,6 +106,10 @@ void Game::update() {
     obstacle.update();
   }
 
+  for (auto &raccoon : raccoons) {
+    raccoon.update();
+  }
+
   checkCollision();
 }
 
@@ -118,6 +131,10 @@ void Game::render(sf::RenderWindow &window) {
   window.draw(*nameText);
   window.draw(*healthText);
   window.draw(*scoreText);
+
+  for (auto &raccoon : raccoons) {
+    raccoon.draw(window);
+  }
 
   std::cout << "Game rendered" << std::endl;
 }

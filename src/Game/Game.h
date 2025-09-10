@@ -2,6 +2,7 @@
 #include "../Engine/Engine.h"
 #include "Obstacle.h"
 #include "Player.h"
+#include "Raccoon.h"
 #include <SFML/Graphics.hpp>
 
 class Game {
@@ -24,6 +25,8 @@ public:
 private:
   Player player;
   Obstacle obstacle;
+  Raccoon raccoon;
+  std::vector<Raccoon> raccoons;
   std::vector<Obstacle> obstacles;
   bool isCollided;
   bool isRunning;

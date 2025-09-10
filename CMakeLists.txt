@@ -13,6 +13,7 @@ set(SOURCES
     src/Game/Game.cpp
     src/Game/Player.cpp
     src/Game/Obstacle.cpp
+    src/Game/Racoon.cpp
 )
 
 include_directories(src)
@@ -22,4 +23,7 @@ add_executable(Multiplayer-Game-Engine-Demo ${SOURCES})
 # Find SFML 3 with version requirement
 find_package(SFML ${SFML_MIN_VERSION} REQUIRED COMPONENTS System Window Graphics)
 
+# Link SFML libraries and include directories
 target_link_libraries(Multiplayer-Game-Engine-Demo sfml-system sfml-window sfml-graphics)
+target_include_directories(Multiplayer-Game-Engine-Demo PRIVATE /opt/homebrew/include)
+target_link_directories(Multiplayer-Game-Engine-Demo PRIVATE /opt/homebrew/lib)
