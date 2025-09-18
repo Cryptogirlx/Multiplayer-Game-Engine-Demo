@@ -68,17 +68,18 @@ void Game::start(sf::RenderWindow &window) {
   std::cout << "Game started" << std::endl;
 
   // Create obstacles
-  obstacles.reserve(3);
+  obstacles.reserve(4);
   obstacles.emplace_back("../assets/Alien2.png", 650, 600, 500, 600);
   obstacles.emplace_back("../assets/Alien1.png", 350, 600, 400, 600);
-  obstacles.emplace_back("../assets/Alien2.png", 143, 600, 300, 600);
+  obstacles.emplace_back("../assets/Alien1.png", 143, 600, 300, 600);
+  obstacles.emplace_back("../assets/Alien2.png", 820, 650, 200, 700);
 
-  // Create raccoons
-  raccoons.reserve(5);
-  raccoons.emplace_back("../assets/raccoon.png", 600, 650);
-  raccoons.emplace_back("../assets/raccoon.png", 400, 635);
+  // Create raccoons 
+  raccoons.reserve(4);
+  raccoons.emplace_back("../assets/raccoon.png", 550, 650);
   raccoons.emplace_back("../assets/raccoon.png", 220, 660);
   raccoons.emplace_back("../assets/raccoon.png", 700, 630);
+  raccoons.emplace_back("../assets/raccoon.png", 760, 640);
 }
 
 void Game::update() {
@@ -107,10 +108,14 @@ void Game::update() {
   }
 
   for (auto &raccoon : raccoons) {
-    raccoon.update();
+    if(!raccoon.isCollected) {
+      checkRaccoonCollision();
+      raccoon.update();
+    }
   }
 
-  checkCollision();
+  checkObstacleCollision();
+  
 }
 
 void Game::render(sf::RenderWindow &window) {
@@ -133,25 +138,40 @@ void Game::render(sf::RenderWindow &window) {
   window.draw(*scoreText);
 
   for (auto &raccoon : raccoons) {
-    raccoon.draw(window);
+    if (!raccoon.isCollected) {
+      raccoon.draw(window);
+    }
   }
 
   std::cout << "Game rendered" << std::endl;
 }
 
-void Game::checkCollision() {
-  // sf::FloatRect playerBounds = player.avatarSprite->getGlobalBounds();
-  // sf::Vector2f startPos = player.getStartPosition();
+void Game::checkObstacleCollision() {
+  sf::FloatRect playerBounds = player.avatarSprite->getGlobalBounds();
 
-  // for (auto &obstacle : obstacles) {
-  //   sf::FloatRect obstacleBounds =
-  //   obstacle.obstacleSprite->getGlobalBounds();
 
-  //   if (playerBounds.findIntersection(obstacleBounds)) {
-  //     player.avatarSprite->setPosition(startPos);
-  //     player.health -= 10;
-  //     std::cout << "Player hit an obstacle!" << std::endl;
-  //     break;
-  //   }
-  // }
+  for (auto &obstacle : obstacles) {
+    sf::FloatRect obstacleBounds =
+    obstacle.obstacleSprite->getGlobalBounds();
+    if (playerBounds.findIntersection(obstacleBounds)) {
+      player.health -= 10;
+      std::cout << "Player hit an obstacle!" << std::endl;
+      break;
+    }
+  }
+}
+
+void Game::checkRaccoonCollision() {
+  sf::FloatRect playerBounds = player.avatarSprite->getGlobalBounds();
+  for (auto &raccoon : raccoons) {
+    if (raccoon.isCollected) continue;
+   
+    sf::FloatRect raccoonBounds = raccoon.raccoonSprite->getGlobalBounds();
+    if (playerBounds.findIntersection(raccoonBounds)) {
+      player.score += 1;
+      raccoon.isCollected = true;
+      std::cout << "Player hit a raccoon!" << std::endl;
+      break;
+    }
+  }
 }

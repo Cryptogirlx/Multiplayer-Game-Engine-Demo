@@ -11,8 +11,8 @@ public:
   void start(sf::RenderWindow &window);
   void update();
   void render(sf::RenderWindow &window);
-  void checkCollision();
-
+  void checkObstacleCollision();
+  void checkRaccoonCollision();
   sf::Font font;
 
   std::unique_ptr<sf::Text> nameText;

@@ -16,6 +16,7 @@ public:
 
   sf::Texture raccoonTexture;
   std::unique_ptr<sf::Sprite> raccoonSprite;
+  bool isCollected;
 
 private:
   int boundWidth, boundHeight;
