@@ -20,7 +20,12 @@ public:
   std::unique_ptr<sf::Text> scoreText;
 
   sf::Texture backgroundTexture;
+  sf::Texture startingBackgroundTexture;
+  std::unique_ptr<sf::Sprite> startingBackgroundSprite;
   std::unique_ptr<sf::Sprite> backgroundSprite;
+
+  enum GameState { StartScreen, Playing, GameOver };
+  int currentState;
 
 private:
   Player player;

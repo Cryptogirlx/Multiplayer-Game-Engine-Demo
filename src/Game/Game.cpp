@@ -6,13 +6,36 @@
 #include <memory>
 
 // Constructor with member initializer list
-Game::Game() : raccoon("../assets/raccoon.png", 0, 0) { 
-  std::cout << "Game constructor called!" << std::endl; 
+Game::Game() : raccoon("../assets/raccoon.png", 0, 0) {
+  std::cout << "Game constructor called!" << std::endl;
 }
 
 void Game::start(sf::RenderWindow &window) {
   isRunning = true;
-  // Import font - ADD DEBUGGING
+  // load startscreen assets
+  if (!startingBackgroundTexture.loadFromFile(
+          "../assets/startBackground.png")) {
+    std::cerr << "Failed to load background!" << std::endl;
+    std::cerr << "Current working directory might be wrong" << std::endl;
+    // Don't continue if font fails to load
+    return;
+  }
+  std::cout << "Background loaded successfully!" << std::endl;
+
+  startingBackgroundSprite =
+      std::make_unique<sf::Sprite>(startingBackgroundTexture);
+  startingBackgroundSprite->setTexture(startingBackgroundTexture);
+  startingBackgroundSprite->setPosition(sf::Vector2f(0.f, 0.f));
+
+  if (startingBackgroundTexture.getSize().x > 0 &&
+      startingBackgroundTexture.getSize().y > 0) {
+    window.draw(*startingBackgroundSprite);
+    std::cout << "Drawing background sprite" << std::endl;
+  } else {
+    std::cout << "Background texture not loaded, skipping draw" << std::endl;
+  }
+
+  // Import font
   std::cout << "Attempting to load font..." << std::endl;
   if (!font.openFromFile("../assets/fonts/Conthrax-SemiBold.otf")) {
     std::cerr << "Failed to load font!" << std::endl;
@@ -74,7 +97,7 @@ void Game::start(sf::RenderWindow &window) {
   obstacles.emplace_back("../assets/Alien1.png", 143, 600, 300, 600);
   obstacles.emplace_back("../assets/Alien2.png", 820, 650, 200, 700);
 
-  // Create raccoons 
+  // Create raccoons
   raccoons.reserve(4);
   raccoons.emplace_back("../assets/raccoon.png", 550, 650);
   raccoons.emplace_back("../assets/raccoon.png", 220, 660);
@@ -84,75 +107,86 @@ void Game::start(sf::RenderWindow &window) {
 
 void Game::update() {
 
-  // save players position before moving
-  sf::Vector2f playerPosition = player.avatarSprite->getPosition();
-
-  if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::W)) {
-    player.move(Player::UP);
-  } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::A)) {
-    player.move(Player::LEFT);
-  } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::S)) {
-    player.move(Player::DOWN);
-  } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::D)) {
-    player.move(Player::RIGHT);
+  if (currentState == StartScreen) {
+    // check for name input and button press
   }
 
-  // Update text each frame (in case health/score changes)
-  healthText->setString(" Health: " + std::to_string(player.health));
-  scoreText->setString(" Raccoons collected: " + std::to_string(player.score));
+  if (currentState == Playing) {
+    // save players position before moving
+    sf::Vector2f playerPosition = player.avatarSprite->getPosition();
 
-  std::cout << "Game updated" << std::endl;
-
-  for (auto &obstacle : obstacles) {
-    obstacle.update();
-  }
-
-  for (auto &raccoon : raccoons) {
-    if(!raccoon.isCollected) {
-      checkRaccoonCollision();
-      raccoon.update();
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::W)) {
+      player.move(Player::UP);
+    } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::A)) {
+      player.move(Player::LEFT);
+    } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::S)) {
+      player.move(Player::DOWN);
+    } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::D)) {
+      player.move(Player::RIGHT);
     }
-  }
 
-  checkObstacleCollision();
-  
+    // Update text each frame (in case health/score changes)
+    healthText->setString(" Health: " + std::to_string(player.health));
+    scoreText->setString(" Raccoons collected: " +
+                         std::to_string(player.score));
+
+    std::cout << "Game updated" << std::endl;
+
+    for (auto &obstacle : obstacles) {
+      obstacle.update();
+    }
+
+    for (auto &raccoon : raccoons) {
+      if (!raccoon.isCollected) {
+        checkRaccoonCollision();
+        raccoon.update();
+      }
+    }
+
+    checkObstacleCollision();
+  }
 }
 
 void Game::render(sf::RenderWindow &window) {
-
-  // Check if texture is loaded before drawing
-  if (backgroundTexture.getSize().x > 0 && backgroundTexture.getSize().y > 0) {
-    window.draw(*backgroundSprite);
-    std::cout << "Drawing background sprite" << std::endl;
-  } else {
-    std::cout << "Background texture not loaded, skipping draw" << std::endl;
+  if (currentState == StartScreen) {
+    // draw the background for the menu, the title text, input box, and PLAY
+    // button.
   }
 
-  for (auto &obstacle : obstacles) {
-    obstacle.draw(window);
-  }
-
-  player.draw(window);
-  window.draw(*nameText);
-  window.draw(*healthText);
-  window.draw(*scoreText);
-
-  for (auto &raccoon : raccoons) {
-    if (!raccoon.isCollected) {
-      raccoon.draw(window);
+  if (currentState == Playing) {
+    // Check if texture is loaded before drawing
+    if (backgroundTexture.getSize().x > 0 &&
+        backgroundTexture.getSize().y > 0) {
+      window.draw(*backgroundSprite);
+      std::cout << "Drawing background sprite" << std::endl;
+    } else {
+      std::cout << "Background texture not loaded, skipping draw" << std::endl;
     }
-  }
 
-  std::cout << "Game rendered" << std::endl;
+    for (auto &obstacle : obstacles) {
+      obstacle.draw(window);
+    }
+
+    player.draw(window);
+    window.draw(*nameText);
+    window.draw(*healthText);
+    window.draw(*scoreText);
+
+    for (auto &raccoon : raccoons) {
+      if (!raccoon.isCollected) {
+        raccoon.draw(window);
+      }
+    }
+
+    std::cout << "Game rendered" << std::endl;
+  }
 }
 
 void Game::checkObstacleCollision() {
   sf::FloatRect playerBounds = player.avatarSprite->getGlobalBounds();
 
-
   for (auto &obstacle : obstacles) {
-    sf::FloatRect obstacleBounds =
-    obstacle.obstacleSprite->getGlobalBounds();
+    sf::FloatRect obstacleBounds = obstacle.obstacleSprite->getGlobalBounds();
     if (playerBounds.findIntersection(obstacleBounds)) {
       player.health -= 10;
       std::cout << "Player hit an obstacle!" << std::endl;
@@ -164,8 +198,9 @@ void Game::checkObstacleCollision() {
 void Game::checkRaccoonCollision() {
   sf::FloatRect playerBounds = player.avatarSprite->getGlobalBounds();
   for (auto &raccoon : raccoons) {
-    if (raccoon.isCollected) continue;
-   
+    if (raccoon.isCollected)
+      continue;
+
     sf::FloatRect raccoonBounds = raccoon.raccoonSprite->getGlobalBounds();
     if (playerBounds.findIntersection(raccoonBounds)) {
       player.score += 1;
@@ -175,3 +210,5 @@ void Game::checkRaccoonCollision() {
     }
   }
 }
+
+void ::Game updateStartScreen() {}
