@@ -6,12 +6,14 @@
 #include <memory>
 
 // Constructor with member initializer list
-Game::Game() : raccoon("../assets/raccoon.png", 0, 0) {
+Game::Game()
+    : raccoon("../assets/raccoon.png", 0, 0), currentState(StartScreen) {
   std::cout << "Game constructor called!" << std::endl;
 }
 
 void Game::start(sf::RenderWindow &window) {
   isRunning = true;
+  currentState = StartScreen; // Ensure we start with the start screen
   // load startscreen assets
   if (!startingBackgroundTexture.loadFromFile(
           "../assets/startBackground.png")) {
@@ -26,6 +28,9 @@ void Game::start(sf::RenderWindow &window) {
       std::make_unique<sf::Sprite>(startingBackgroundTexture);
   startingBackgroundSprite->setTexture(startingBackgroundTexture);
   startingBackgroundSprite->setPosition(sf::Vector2f(0.f, 0.f));
+
+  // compute background scale
+
 
   if (startingBackgroundTexture.getSize().x > 0 &&
       startingBackgroundTexture.getSize().y > 0) {
@@ -77,7 +82,8 @@ void Game::start(sf::RenderWindow &window) {
   backgroundSprite->setTexture(backgroundTexture);
   backgroundSprite->setPosition(sf::Vector2f(0.f, 0.f));
 
-  // compute background scale
+
+  // calculate scales
 
   sf::Vector2u windowSize = window.getSize();
   sf::Vector2u textureSize = backgroundTexture.getSize();
@@ -85,14 +91,15 @@ void Game::start(sf::RenderWindow &window) {
   float scaleX = static_cast<float>(windowSize.x) / textureSize.x;
   float scaleY = static_cast<float>(windowSize.y) / textureSize.y;
 
-  // Apply scaling to the sprite
+  startingBackgroundSprite->setScale(sf::Vector2f(scaleX/4, scaleY/4));
+
   backgroundSprite->setScale(sf::Vector2f(scaleX, scaleY));
 
   std::cout << "Game started" << std::endl;
 
   // Create obstacles
   obstacles.reserve(4);
-  obstacles.emplace_back("../assets/Alien2.png", 650, 600, 500, 600);
+  obstacles.emplace_back("../assets/Alien2.png", 650, 600, 300, 600);
   obstacles.emplace_back("../assets/Alien1.png", 350, 600, 400, 600);
   obstacles.emplace_back("../assets/Alien1.png", 143, 600, 300, 600);
   obstacles.emplace_back("../assets/Alien2.png", 820, 650, 200, 700);
@@ -103,12 +110,44 @@ void Game::start(sf::RenderWindow &window) {
   raccoons.emplace_back("../assets/raccoon.png", 220, 660);
   raccoons.emplace_back("../assets/raccoon.png", 700, 630);
   raccoons.emplace_back("../assets/raccoon.png", 760, 640);
+
+  // Initialize starting screen elements
+  titleText = std::make_unique<sf::Text>(font, "SPACE RACOON", 48);
+  titleText->setFillColor(sf::Color::White);
+  titleText->setPosition(sf::Vector2f(300.f, 200.f));
+
+  inputPromptText = std::make_unique<sf::Text>(font, "Enter your name:", 24);
+  inputPromptText->setFillColor(sf::Color::White);
+  inputPromptText->setPosition(sf::Vector2f(320.f, 350.f));
+
+  playerNameText = std::make_unique<sf::Text>(font, "", 24);
+  playerNameText->setFillColor(sf::Color::White);
+  playerNameText->setPosition(sf::Vector2f(350.f, 400.f));
+
+  startButtonText =
+      std::make_unique<sf::Text>(font, "Press ENTER to Start", 24);
+  startButtonText->setFillColor(sf::Color::White);
+  startButtonText->setPosition(sf::Vector2f(300.f, 500.f));
+
+  playerNameInput = "";
+  isTyping = false;
 }
 
 void Game::update() {
-
   if (currentState == StartScreen) {
-    // check for name input and button press
+    // Handle text input
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Backspace) &&
+        !playerNameInput.empty()) {
+      playerNameInput.pop_back();
+      playerNameText->setString(playerNameInput);
+    }
+
+    // Handle Enter key to start game
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Enter) &&
+        !playerNameInput.empty()) {
+      player.setPlayerName(playerNameInput);
+      currentState = Playing;
+    }
   }
 
   if (currentState == Playing) {
@@ -149,8 +188,16 @@ void Game::update() {
 
 void Game::render(sf::RenderWindow &window) {
   if (currentState == StartScreen) {
-    // draw the background for the menu, the title text, input box, and PLAY
-    // button.
+    // Draw starting background
+    if (startingBackgroundTexture.getSize().x > 0) {
+      window.draw(*startingBackgroundSprite);
+    }
+
+    // Draw starting screen elements
+    window.draw(*titleText);
+    window.draw(*inputPromptText);
+    window.draw(*playerNameText);
+    window.draw(*startButtonText);
   }
 
   if (currentState == Playing) {
@@ -211,4 +258,17 @@ void Game::checkRaccoonCollision() {
   }
 }
 
-void ::Game updateStartScreen() {}
+void Game::handleEvent(const sf::Event &event) {
+  if (currentState == StartScreen) {
+    if (event.is<sf::Event::TextEntered>()) {
+      // In SFML 3.x, use getIf instead of get
+      if (const auto *textEvent = event.getIf<sf::Event::TextEntered>()) {
+        if (textEvent->unicode >= 32 &&
+            textEvent->unicode <= 126) { // Printable characters
+          playerNameInput += static_cast<char>(textEvent->unicode);
+          playerNameText->setString(playerNameInput);
+        }
+      }
+    }
+  }
+}

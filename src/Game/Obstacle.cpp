@@ -6,7 +6,7 @@
 
 Obstacle::Obstacle(std::filesystem::path filePath, float x, float y, float minY,
                    float maxY) {
-  speed = 4.0f;    // movement speed
+  speed = 5.0f;    // movement speed
   movingUp = true; // initial direction
 
   // Start the obstacle somewhere inside the vertical range (not exactly at min

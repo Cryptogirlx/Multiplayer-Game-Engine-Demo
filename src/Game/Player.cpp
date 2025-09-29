@@ -84,3 +84,24 @@ void Player::move(Direction direction) {
 }
 
 sf::String Player::getPlayerName() { return name; }
+
+void Player::setPlayerName(std::string playerName) {
+  name = playerName;
+}
+
+int Player::getPlayerHealth() {
+  return health;
+}
+
+int Player::getPlayerScore() {
+  return score;
+}
+
+void Player::updatePlayerHeath() {
+  // This method name has a typo (Heath instead of Health)
+  // You might want to fix the header file too
+}
+
+void Player::updatePlayerScore() {
+  // Implementation for updating player score
+}

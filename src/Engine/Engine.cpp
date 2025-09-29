@@ -7,7 +7,7 @@
 void Engine::init() {
   isRunning = true;
   // SFML 3.x VideoMode takes a Vector2u
-  window.create(sf::VideoMode(sf::Vector2u(1000, 800)), "Quantum Runner");
+  window.create(sf::VideoMode(sf::Vector2u(1000, 800)), "Space Raccoon");
   window.setFramerateLimit(60); // optional
 }
 
@@ -18,10 +18,11 @@ void Engine::run(Game &game) {
   while (isRunning && window.isOpen()) {
     // --- Event Handling ---
     while (auto maybeEvent = window.pollEvent()) {
-      // SFML 3.x: events are std::optional<sf::Event>
       if (maybeEvent->is<sf::Event::Closed>()) { // check if it's a Close event
         window.close();
         stop();
+      } else {
+        game.handleEvent(*maybeEvent); // Pass all events to the game
       }
     }
 

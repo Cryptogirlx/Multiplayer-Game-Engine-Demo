@@ -18,7 +18,7 @@ public:
   sf::Vector2f getVerticalBounds();
   sf::Vector2f getStartPosition();
 
-  void setPlayerName();
+  void setPlayerName(std::string playerName);
   sf::String getPlayerName();
 
   int getPlayerHealth();
