@@ -10,7 +10,7 @@ class Game {
 public:
   Game();
   void start(sf::RenderWindow &window);
-  void update();
+  void update(float deltaTime);
   void render(sf::RenderWindow &window);
   void checkObstacleCollision();
   void checkRaccoonCollision();

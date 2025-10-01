@@ -11,4 +11,5 @@ public:
 private:
     bool isRunning;
     sf::RenderWindow window;
+    sf::Clock clock;
 };

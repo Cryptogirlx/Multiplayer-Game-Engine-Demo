@@ -3,11 +3,11 @@
 #include <memory>
 
 Player::Player() {
-  x = 10; // Start in playable area (right of text area)
-  y = 550;
+  x = 10.0f; // Start in playable area (right of text area)
+  y = 550.0f;
   health = 100;
   score = 0;
-  speed = 4;
+  speed = 200.0f; // Increased speed value since we're now using delta time
   name = "Zsofie"; // Add this line to initialize the name
 
   boundWidth = 800;
@@ -50,19 +50,21 @@ void Player::draw(sf::RenderWindow &window) {
   }
 }
 
-void Player::move(Direction direction) {
+void Player::move(Direction direction, float deltaTime) {
+  float movement = speed * deltaTime;
+  
   switch (direction) {
   case UP:
-    y -= speed;
+    y -= movement;
     break;
   case DOWN:
-    y += speed;
+    y += movement;
     break;
   case LEFT:
-    x -= speed;
+    x -= movement;
     break;
   case RIGHT:
-    x += speed;
+    x += movement;
     break;
   }
 

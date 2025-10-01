@@ -18,8 +18,7 @@ std::cout << "Fireball initialized!" << std::endl;
 }
 
 // setter functions
-void Fireball::createFireballTexture(std::filesystem::path filePath, float x, float y,
-    float minY, float maxY, float speed) {
+void Fireball::createFireballTexture(std::filesystem::path filePath, float _startX, float _startY,float _xSpeed, float _ySpeed) {
 
         if (!fireballTexture.loadFromFile(filePath)) {
 
@@ -31,26 +30,19 @@ void Fireball::createFireballTexture(std::filesystem::path filePath, float x, fl
           std::cout << "Fireball texture loaded successfully from: " << filePath
                     << std::endl;
         
-          // Create sprite with texture
+
           fireballSprite = std::make_unique<sf::Sprite>(fireballTexture);
-          fireballSprite->setPosition(sf::Vector2f(x, y));
-        
-          // Set vertical bounds
-          setVerticalFireballBounds(minY, maxY);
+          fireballSprite->setPosition(sf::Vector2f(_startX, _startY));
+    
+          setDiagonalSpeed(_xSpeed, _ySpeed);
 
 }
 
 
-void Fireball::setSpeed(float _speed) {
-    speed = _speed;
+void Fireball::setDiagonalSpeed(float _xSpeed, float _ySpeed ) {
+    diagonalSpeed.x = _xSpeed;
+    diagonalSpeed.y = _ySpeed;
 }
-
-void Fireball::setVerticalFireballBounds(float _minY, float _maxY) {
-    if (_minY > _maxY)
-    std::swap(_minY, _maxY);
-  verticalBounds.x = _minY; // minY
-  verticalBounds.y = _maxY; // maxY
-} 
 
 // game functions
 void Fireball::draw(sf::RenderWindow &window) {
@@ -58,4 +50,6 @@ void Fireball::draw(sf::RenderWindow &window) {
       window.draw(*fireballSprite);
     }
   }
+
+
 

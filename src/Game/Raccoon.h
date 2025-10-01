@@ -1,22 +1,20 @@
 #pragma once
 #include <SFML/Graphics.hpp>
-#include <algorithm> // for std::swap
 #include <filesystem>
-#include <iostream>
-#include <memory>
 
 class Raccoon {
 public:
+  Raccoon() = default;
   Raccoon(std::filesystem::path filePath, float x, float y);
-
-  void createRaccoonTexture(std::filesystem::path filePath, float x, float y);
-  void draw(sf::RenderWindow &window);
-  void update();
-  void setBounds(float width, float height);
 
   sf::Texture raccoonTexture;
   std::unique_ptr<sf::Sprite> raccoonSprite;
-  bool isCollected;
+  bool isCollected = false;
+
+  void setBounds(float width, float height);
+  void createRaccoonTexture(std::filesystem::path filePath, float x, float y);
+  void draw(sf::RenderWindow &window);
+  void update(float deltaTime);
 
 private:
   int boundWidth, boundHeight;

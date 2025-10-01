@@ -16,6 +16,9 @@ void Engine::run(Game &game) {
   game.start(window);
 
   while (isRunning && window.isOpen()) {
+    // Calculate delta time
+    float deltaTime = clock.restart().asSeconds();
+    
     // --- Event Handling ---
     while (auto maybeEvent = window.pollEvent()) {
       if (maybeEvent->is<sf::Event::Closed>()) { // check if it's a Close event
@@ -27,7 +30,7 @@ void Engine::run(Game &game) {
     }
 
     // --- Update Game Logic ---
-    game.update();
+    game.update(deltaTime);
 
     // --- Render ---
     window.clear();      // clear previous frame

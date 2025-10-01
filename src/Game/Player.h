@@ -9,7 +9,7 @@ public:
   int score;
 
   enum Direction { UP, DOWN, LEFT, RIGHT };
-  void move(Direction direction);
+  void move(Direction direction, float deltaTime);
   void setBounds(float width, float height);
 
   void draw(sf::RenderWindow &window);
@@ -31,8 +31,8 @@ public:
   std::unique_ptr<sf::Sprite> avatarSprite;
 
 private:
-  int x, y;
-  int speed;
+  float x, y;  // Changed from int to float for smoother movement
+  float speed; // Changed from int to float
   int boundWidth, boundHeight;
   sf::String name;
   sf::Vector2f verticalBounds;

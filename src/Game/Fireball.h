@@ -1,35 +1,34 @@
-#include "Fireball.h"
-#include <algorithm> // for std::swap
+#pragma once
+#include <SFML/Graphics.hpp>
 #include <filesystem>
-#include <iostream>
-#include <memory>
 
 class Fireball {
-    public:
+public:
     Fireball() = default;
     Fireball(std::filesystem::path filePath, float x, float y, float minY,
-               float maxY);
+               float maxY, float speed);
     
-      sf::Texture meteoriteTexture;
-      std::unique_ptr<sf::Sprite> meteoriteSprite;
-      
-      void createFireballTexture(std::filesystem::path filePath, float x, float y,
-                                 float minY, float maxY, float speed);
-      
-      // setter functions
-      void setFireballBounds(float width, float height);
-      void setVerticalFireballBounds(float minY, float maxY);
-      void setSpeed(float speed);
-      sf::Vector2f getVerticalMeteoriteBounds();
-
-
-      // game functions
-      void update();
-      void draw(sf::RenderWindow &window);
-     
+    sf::Texture fireballTexture;
+    std::unique_ptr<sf::Sprite> fireballSprite;
     
-    private:
-      int boundWidth, boundHeight;
-      float speed;
-      sf::Vector2f verticalBounds;
-    };
+    void createFireballTexture(std::filesystem::path filePath, float x, float y,
+                               float minY, float maxY, float speed);
+    void createFireballTexture(std::filesystem::path filePath, float _startX, float _startY, float _xSpeed, float _ySpeed);
+    
+    // setter functions
+    void setFireballBounds(float width, float height);
+    void setVerticalFireballBounds(float minY, float maxY);
+    void setDiagonalSpeed(float xSpeed, float ySpeed);
+    void setSpeed(float speed);
+
+    // game functions
+    void update(float deltaTime);
+    void draw(sf::RenderWindow &window);
+   
+private:
+    int boundWidth, boundHeight;
+    sf::Vector2f diagonalSpeed;
+    float speed;
+    sf::Vector2f verticalBounds;
+    bool movingUp;
+};

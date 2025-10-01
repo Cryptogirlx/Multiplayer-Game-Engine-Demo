@@ -57,7 +57,7 @@ void Obstacle::setVerticalBounds(float _minY, float _maxY) {
 
 sf::Vector2f Obstacle::getVerticalBounds() { return verticalBounds; }
 
-void Obstacle::update() {
+void Obstacle::update(float deltaTime) {
   if (!obstacleSprite)
     return; // safety check
 
@@ -70,14 +70,16 @@ void Obstacle::update() {
   const float minY = verticalBounds.x;
   const float maxY = verticalBounds.y;
 
+  float movement = speed * deltaTime;
+
   if (movingUp) {
-    currentY -= speed;
+    currentY -= movement;
     if (currentY <= minY) {
       currentY = minY;
       movingUp = false;
     }
   } else {
-    currentY += speed;
+    currentY += movement;
     if (currentY >= maxY) {
       currentY = maxY;
       movingUp = true;

@@ -37,7 +37,8 @@ void Raccoon::setBounds(float width, float height) {
   boundHeight = height;
 }
 
-void Raccoon::update() {
+void Raccoon::update(float deltaTime) {
   // Add any raccoon-specific update logic here
   // For now, this is just a placeholder
+  // You can add movement or animation logic here using deltaTime
 }
