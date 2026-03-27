@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+
+# CMake build artifacts (root)
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+compile_commands.json
+
+# Out-of-source build dirs
+build/
+cmake-build-*/
+out/
+dist/
